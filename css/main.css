@@ -304,11 +304,11 @@ Individual blog page post styling
 }
 
 .post h1 {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 3rem;
-  color: #df4747;
-  margin: 85px 25vw .5em 25vw;
   font-weight: 300;
+  color: #df4747;
+  margin: 15vh 25vw .5em 25vw;
   line-height: 40px;
   padding: 30px 0;
 }
@@ -336,11 +336,9 @@ Individual blog page post styling
   width: 75vw;
   margin: 0 auto;
 }
-
 #meta ul li {
   float: left;
 }
-
 #meta ul .date {
   width: 12.5vw;
   line-height: 1.3em;
@@ -350,7 +348,6 @@ Individual blog page post styling
   letter-spacing: 1px;
   padding: 15px 0 13px 0;
 }
-
 #meta ul .categories {
   width: 45vw;
   font-size: 0.9em;
@@ -359,39 +356,24 @@ Individual blog page post styling
   padding-top: 19px;
   font-weight: 300;
 }
-
 #meta ul .old {
-  display: inline;
-  text-align: left;
   border-right: 1px solid rgba(204, 204, 204, 0.3);
-  width: 6vw;
-  padding: 0;
 }
-
-#meta ul .new {
+#meta ul .new, #meta ul .old {
   display: inline;
   text-align: left;
   width: 6vw;
   padding: 0;
 }
 
-#meta li.old a {
+#meta .arrow a {
   display: block;
   color: #999999;
   text-align: center;
   padding: 16px 0 15px;
   transition: background-color 0.3s ease, color 0.3s inline;
 }
-
-#meta li.new a {
-  display: block;
-  color: #999999;
-  text-align: center;
-  padding: 16px 0 15px;
-  transition: background-color 0.3s ease;
-}
-
-#meta li a:hover {
+#meta .arrow a:hover {
   background-color: #282828;
   color: white;
 }
@@ -437,7 +419,7 @@ Footer styling
 }
 
 .about-me h2, .more-me h2, .twitter-feed h2 {
-  font-size: 1.25em;
+  font-size: 1.1em;
   font-weight: 300;
   color: #cccccc;
   text-transform: uppercase;
@@ -461,41 +443,36 @@ Footer styling
   margin-right: 15px;
 }
 
-.about-me img, .more-me img {
-  border-radius: 40px;
+.JK {
   margin-top: 5px;
 }
 
-.about-me p, .more-me p {
-  font-size: 1.2em;
-  margin: 0 10px 0 10px;
-  font-weight: 250;
+.currentBook {
+  margin: 0px 10px 0 20px;
+  display: inline-block;
 }
 
-.more, .more-me .more {
-  text-transform: uppercase;
-  float: right;
-  font-size: .8em;
-  letter-spacing: 2px;
-  margin-right: 10px;
-  color: #666666;
-  background-color: #262626;
-  padding: 2px;
-  border-radius: 2px;
-  transition: color 0.2s ease;
+.about-me p, .more-me p {
+  font-size: 1.1em;
+  margin: 0 10px 0 10px;
+  font-weight: 250;
 }
 
 .about-me a:hover, .more-me a:hover, .more-me a:hover {
   color: rgba(255, 255, 255, 0.8);
 }
 
-.more-me .more {
-  margin-top: 10px;
-}
-
-.more-me img {
-  margin: 0px 10px 0 20px;
-  display: inline-block;
+.footer-link {
+  text-transform: uppercase;
+  float: right;
+  font-size: .8em;
+  letter-spacing: 2px;
+  color: #666666;
+  background-color: #262626;
+  padding: 2px;
+  border-radius: 2px;
+  transition: color 0.2s ease;
+  margin: 10px;
 }
 
 .more-me span {
@@ -511,7 +488,7 @@ Footer styling
 }
 
 .twitter-feed {
-  background-color: #000;
+  background-color: black;
   padding: 25px 0 150px 0;
   border-bottom: 1px solid #292929;
   border-left: 1px solid #292929;

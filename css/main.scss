@@ -3,7 +3,7 @@ $maintext:'Lato', sans-serif;
 $headingtext:'Source Sans Pro', sans-serif;
 $paratext:'Lato', sans-serif;
 $timetext:'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Arial, sans-serif;
-
+$normalweight: 300;
 
 /*****************************************
 
@@ -330,11 +330,12 @@ Individual blog page post styling
 }
 
 .post h1 {
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 3rem;
+	font: {
+		family: $headingtext;
+		size: 3rem;
+		weight: 300;}
 	color: $red;
-	margin: 85px 25vw .5em 25vw;
-	font-weight: 300;
+	margin: 15vh 25vw .5em 25vw;
 	line-height: 40px;
 	padding: 30px 0;
 }
@@ -342,20 +343,19 @@ Individual blog page post styling
 .post p {
 	color: $darkgrey;
 	font-size: 0.65em;
-	margin-left: 25vw;
-	margin-right: 25vw;
+	margin: {
+		left: 25vw;
+		right: 25vw;}
 }
 
 #meta {
 	float: left;
 	width: 100vw;
 	clear: both;
-	// color: #bdbdbd;
 	font-weight: 400;
 	border-bottom: 1px solid $darkgreyborder;
 	margin-top: 40px;
 	background: rgba(204, 204, 204, 0.2);
-	
 }
 
 #meta ul {
@@ -363,70 +363,54 @@ Individual blog page post styling
 	list-style: none;
 	width: 75vw;
 	margin: 0 auto;
-}
 
-#meta ul li {
-	float: left;
-}
+	li {
+	float: left;	
+	}
 
-#meta ul .date {
+	.date {
 	width: 12.5vw;
 	line-height: 1.3em;
 	border-right: 1px solid rgba(204,204,204,0.3);
-	font-weight: 300;
+	font-weight: $normalweight;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	padding: 15px 0 13px 0;
-}
+	}
 
-
-#meta ul .categories {
+	.categories {
 	width: 45vw;
 	font-size: 0.9em;
 	line-height: 1em;
 	padding-left: 2vw;
 	padding-top: 19px;
-	font-weight: 300;
-}
+	font-weight: $normalweight;
+	}
 
-
-#meta ul .old {
-	display: inline;
-	text-align: left;
+	.old {
+	@extend .new;
 	border-right: 1px solid rgba(204,204,204,0.3);
-	width: 6vw;
-	padding: 0;
-}
+	}
 
-#meta ul .new {
+	.new {
 	display: inline;
 	text-align: left;
 	width: 6vw;
 	padding: 0;
+	}
 }
 
-#meta li.old a {
+#meta .arrow a {
 	display: block;
 	color: $arrowcolor;
 	text-align: center;
 	padding: 16px 0 15px;
 	transition: background-color 0.3s ease, color 0.3s inline;
+	&:hover {
+		background-color: $darkgreyborder;
+		color: $white;
+		}
 }
-
-#meta li.new a {
-	display: block;
-	color: $arrowcolor;
-	text-align: center;
-	padding: 16px 0 15px;
-	transition: background-color 0.3s ease;
-
-}
-
-#meta li a:hover {
-	background-color: $darkgreyborder;
-	color: white;
-}
-
 
 
 /*****************************************
@@ -476,8 +460,9 @@ Footer styling
 }
 
 %footer-h2 {
-	font-size: 1.25em;
-	font-weight: 300;
+	font: {
+		size: 1.1em;
+		weight: 300;}
 	color: $footergrey;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -503,46 +488,36 @@ Footer styling
 	margin-right: 15px;
 }
 
-.about-me img {
-	border-radius: 40px;
+.JK {
 	margin-top: 5px;
 }
 
-.about-me p {
-	font-size: 1.2em;
-	margin: 0 10px 0 10px;
-	font-weight: 250;
+.currentBook {
+	margin: 0px 10px 0 20px;
+	display: inline-block;
 }
 
-.more {
-	text-transform: uppercase;
-	float: right;
-	font-size: .8em;
-	letter-spacing: 2px;
-	margin-right: 10px;
-	color: $footerdarkgreybutton;
-	background-color: $footerdarkgreybuttonbackground;
-	padding: 2px;
-	border-radius: 2px;
-	transition: color 0.2s ease;
+.about-me p {
+	font-size: 1.1em;
+	margin: 0 10px 0 10px;
+	font-weight: 250;
 }
 
 .about-me a:hover, .more-me a:hover {
 	color: $whitehover;
 }
 
-.more-me .more {
-	@extend .more;
-	margin-top: 10px;
-}
-
-
-
-
-
-.more-me img {
-	margin: 0px 10px 0 20px;
-	display: inline-block;
+.footer-link {
+	text-transform: uppercase;
+	float: right;
+	font-size: .8em;
+	letter-spacing: 2px;
+	color: $footerdarkgreybutton;
+	background-color: $footerdarkgreybuttonbackground;
+	padding: 2px;
+	border-radius: 2px;
+	transition: color 0.2s ease;
+	margin: 10px;
 }
 
 .more-me span {
@@ -557,14 +532,11 @@ Footer styling
 	color: $footergrey;
 }
 
-
-
-
 .twitter-feed {
-	background-color: #000;
+	background-color: $black;
 	padding: 25px 0 150px 0;
-	border-bottom: 1px solid #292929;
-	border-left: 1px solid #292929;
+	border-bottom: 1px solid $footerborders;
+	border-left: 1px solid $footerborders;
 }
 
 
