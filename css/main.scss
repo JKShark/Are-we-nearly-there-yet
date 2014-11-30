@@ -5,6 +5,7 @@ $paratext:'Lato', sans-serif;
 $timetext:'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Arial, sans-serif;
 $normalweight: 300;
 
+
 /*****************************************
 
 Clear Fix hack
@@ -258,12 +259,11 @@ Slider and button layout for landing page
 
 
 
+/*****************************************
 
+Blog landing page layout and styles
 
-
-.articles {
-	background-color: $white;
-}
+*****************************************/
 
 .container {
 	float: left;
@@ -296,7 +296,6 @@ Slider and button layout for landing page
 	background-color: rgba(227, 225, 225, 0.5);
 }
 
-
 .excerpt {
 	color: $darkgrey;
 	padding: 0 0 15px 0;
@@ -312,15 +311,11 @@ Slider and button layout for landing page
 }
 
 
-
-
-
 /*****************************************
 
 Individual blog page post styling
 
 *****************************************/
-
 
 .post {
 	background-color: white;
@@ -454,9 +449,16 @@ Footer styling
 	border-bottom: 1px solid $footerborders;
 }
 
-.more-me {
+.read-now {
 	@extend .about-me;
+	padding-bottom: 36px;
 	border-left: 1px solid $footerborders;
+}
+
+.blah-blah   {
+	@extend .read-now;
+	padding: 10px 0 40px 0;
+
 }
 
 %footer-h2 {
@@ -470,12 +472,20 @@ Footer styling
 
 .about-me h2 {
 	@extend %footer-h2;
-	margin: 25px 0 10px 0;
+	margin: 25px 0 0px 0;
 }
 
-.more-me h2 {
+.read-now h2 {
 	@extend %footer-h2;
 	margin-left: 5px;
+}
+
+.blah-blah h2 {
+	@extend %footer-h2;
+	margin: {
+		top: 0px;
+		left: 5px;
+		bottom: 10px;}
 }
 
 .twitter-feed h2 {
@@ -489,21 +499,28 @@ Footer styling
 }
 
 .JK {
-	margin-top: 5px;
+	margin-top: 20px;
 }
 
 .currentBook {
-	margin: 0px 10px 0 20px;
+	margin: 20px 10px 20px 20px;
 	display: inline-block;
+	max-width: 10vw;
+}
+
+.futureBook {
+	@extend .currentBook;
+	margin: 10px 10px ;
 }
 
 .about-me p {
+	line-height: 1.5em;
+	margin: 15px 0 0 0;
 	font-size: 1.1em;
-	margin: 0 10px 0 10px;
 	font-weight: 250;
 }
 
-.about-me a:hover, .more-me a:hover {
+.about-me a:hover, .read-now a:hover {
 	color: $whitehover;
 }
 
@@ -520,15 +537,16 @@ Footer styling
 	margin: 10px;
 }
 
-.more-me span {
+.read-now p {
 	font-size: 0.8em;
 	font-weight: 250;
 	color: $arrowcolor;
-	margin-top: 10px;
+	margin-top: 20px;
+	padding-right: 10px;
 	transition: color 0.2s ease;
 }
 
-.more-me span:hover {
+.read-now p:hover {
 	color: $footergrey;
 }
 
