@@ -428,12 +428,12 @@ Footer styling
 }
 
 #footer-left-section {
-	width: 36vw;
+	width: 30vw;
 	float: left;
 }
 
 #footer-middle-section {
-	width: 22vw;
+	width: 25vw;
 	padding-top: 12px;
 	float: left;
 	padding: 0;
@@ -458,6 +458,7 @@ Footer styling
 .blah-blah   {
 	border-left: 1px solid $footerborders;	
 	padding: 10px 0 40px 0;
+	clear: both;
 
 }
 
@@ -472,7 +473,12 @@ Footer styling
 
 .about-me h2 {
 	@extend %footer-h2;
-	margin: 25px 0 0px 0;
+	margin-top: 25px;
+}
+
+.follow-me h2 {
+	@extend %footer-h2;
+	margin-top: 25px;
 }
 
 .read-now h2 {
@@ -502,15 +508,80 @@ Footer styling
 	margin-top: 20px;
 }
 
+.follow {
+	list-style: none;
+	line-height: 1.5em;
+}
+
+%social {
+	color: $footerdarkgrey;
+	font-size: 0.8em;
+}
+
+.tw a {
+	@extend %social;
+	&:hover {
+		color: $whitehover;
+	}
+}
+
+.facebook a {
+	@extend %social;	
+	&:hover {
+		color: $whitehover;
+	}
+}
+
+.instagram a {
+	@extend %social;
+	&:hover {
+		color: $whitehover;
+	}
+}
+
+.ig-b- {
+	display: inline;
+}
+
+.ig-b- img {
+	visibility: hidden;
+}
+
+.ig-b-:hover {
+	background-position: 0 -60px;
+}
+
+.ig-b-:active {
+	background-position: 0 -120px;
+}
+
+.ig-b-16 {
+	width: 16px;
+	height: 16px;
+	background: url(http://badges.instagram.com/static/images/ig-badge-sprite-16.png) no-repeat 0 0;
+	background-image: url(http://badges.instagram.com/static/images/ig-badge-sprite-16@2x.png);
+	background-size: 60px 178px;
+	margin-right: 10px;
+}
+
+.linkedin a {
+	@extend %social;
+	&:hover {
+		color: $whitehover;
+	}
+}
+
 .currentBook {
-	margin: 20px 10px 20px 20px;
+	margin: 0 10px 20px 20px;
 	display: inline-block;
-	max-width: 10vw;
+	max-width: 13vw;
+	height: 18vh;
 }
 
 .futureBook {
 	@extend .currentBook;
 	margin: 10px 10px ;
+	height: 25vh;
 }
 
 .about-me p {
@@ -559,7 +630,7 @@ Footer styling
 	margin-top: 20px;
 	padding-right: 10px;
 	transition: color 0.2s ease;
-	line-height: 1.5em;
+	line-height: 2em;
 }
 
 .read-now p:hover {
@@ -572,7 +643,6 @@ Footer styling
 .twitter-feed {
 	background-color: $black;
 	padding-top: 25px;
-	
 	border-left: 1px solid $footerborders;
 }
 
@@ -580,7 +650,6 @@ Footer styling
 	height: 375px;
 	overflow: hidden;
 	margin: 5px 0 10px 5px;
-
 }
 
 
