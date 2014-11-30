@@ -428,12 +428,12 @@ Footer styling
 }
 
 #footer-left-section {
-	width: 40vw;
+	width: 36vw;
 	float: left;
 }
 
 #footer-middle-section {
-	width: 20vw;
+	width: 22vw;
 	padding-top: 12px;
 	float: left;
 	padding: 0;
@@ -445,7 +445,7 @@ Footer styling
 
 .about-me {
 	background-color: $black;
-	padding: 25px 0 35px 0;
+	padding: 25px 5px 35px 0;
 	border-bottom: 1px solid $footerborders;
 }
 
@@ -456,7 +456,7 @@ Footer styling
 }
 
 .blah-blah   {
-	@extend .read-now;
+	border-left: 1px solid $footerborders;	
 	padding: 10px 0 40px 0;
 
 }
@@ -537,24 +537,50 @@ Footer styling
 	margin: 10px;
 }
 
-.read-now p {
-	font-size: 0.8em;
-	font-weight: 250;
+%central-text {
+	font: {
+		size: 0.8em;
+		weight: 250;}
 	color: $arrowcolor;
 	margin-top: 20px;
 	padding-right: 10px;
 	transition: color 0.2s ease;
 }
 
+.read-now p {
+	@extend %central-text;
+}
+
+.blah-blah p {
+	font: {
+		size: 0.8em;
+		weight: 250;}
+	color: $arrowcolor;
+	margin-top: 20px;
+	padding-right: 10px;
+	transition: color 0.2s ease;
+	line-height: 1.5em;
+}
+
 .read-now p:hover {
+	color: $footergrey;
+}
+.blah-blah p:hover {
 	color: $footergrey;
 }
 
 .twitter-feed {
 	background-color: $black;
-	padding: 25px 0 150px 0;
-	border-bottom: 1px solid $footerborders;
+	padding-top: 25px;
+	
 	border-left: 1px solid $footerborders;
+}
+
+.twitter-timeline {
+	height: 375px;
+	overflow: hidden;
+	margin: 5px 0 10px 5px;
+
 }
 
 
