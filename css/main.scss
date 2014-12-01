@@ -457,7 +457,7 @@ Footer styling
 
 .blah-blah   {
 	border-left: 1px solid $footerborders;	
-	padding: 10px 0 40px 0;
+	padding: 0px 0 20px 0;
 	clear: both;
 
 }
@@ -488,10 +488,11 @@ Footer styling
 
 .blah-blah h2 {
 	@extend %footer-h2;
+	padding-top: 1vh;
 	margin: {
 		top: 0px;
 		left: 5px;
-		bottom: 10px;}
+		bottom: 0px;}
 }
 
 .twitter-feed h2 {
@@ -525,6 +526,12 @@ Footer styling
 	}
 }
 
+.tw-b- img {
+	width: 16px;
+	height: 16px;
+	margin-right: 10px;
+}
+
 .facebook a {
 	@extend %social;	
 	&:hover {
@@ -539,7 +546,11 @@ Footer styling
 	}
 }
 
-.ig-b- {
+.instagram span {
+	padding-left: 10px;
+}
+
+.ig-b- .tw-b {
 	display: inline;
 }
 
@@ -561,7 +572,6 @@ Footer styling
 	background: url(http://badges.instagram.com/static/images/ig-badge-sprite-16.png) no-repeat 0 0;
 	background-image: url(http://badges.instagram.com/static/images/ig-badge-sprite-16@2x.png);
 	background-size: 60px 178px;
-	margin-right: 10px;
 }
 
 .linkedin a {
@@ -572,7 +582,7 @@ Footer styling
 }
 
 .currentBook {
-	margin: 0 10px 20px 20px;
+	margin: 0 10px 0px 20px;
 	display: inline-block;
 	max-width: 13vw;
 	height: 18vh;
@@ -605,7 +615,7 @@ Footer styling
 	padding: 2px;
 	border-radius: 2px;
 	transition: color 0.2s ease;
-	margin: 10px;
+	margin: 5px 10px;
 }
 
 %central-text {
@@ -620,6 +630,7 @@ Footer styling
 
 .read-now p {
 	@extend %central-text;
+	padding-bottom: 4vh;
 }
 
 .blah-blah p {
@@ -629,6 +640,7 @@ Footer styling
 	color: $arrowcolor;
 	margin-top: 20px;
 	padding-right: 10px;
+	padding-bottom: 5vh;
 	transition: color 0.2s ease;
 	line-height: 2em;
 }
@@ -647,11 +659,29 @@ Footer styling
 }
 
 .twitter-timeline {
-	height: 375px;
+	height: 55vh; /*375px*/
 	overflow: hidden;
 	margin: 5px 0 10px 5px;
+	
 }
 
-
+.contentinfo {
+	clear: both;
+	font-size: 0.75em;
+	width: 80vw;
+	text-align: center;
+	border-top: 1px solid $footerborders;
+	padding: 10px 0px 40px 0;
+	color: $footerdarkgreybutton;
+	a {
+		color: $footerdarkgrey;
+		&:hover {
+			color: $whitehover;
+		}
+	}
+	span {
+		margin: 0 20px;
+	}
+}
 
 
