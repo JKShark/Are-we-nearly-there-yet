@@ -506,7 +506,7 @@ Footer styling
 }
 
 .JK {
-	margin-top: 20px;
+	margin-top: 10px;
 }
 
 .follow {
@@ -550,7 +550,7 @@ Footer styling
 	padding-left: 10px;
 }
 
-.ig-b- .tw-b {
+.ig-b- .tw-b .li-b {
 	display: inline;
 }
 
@@ -574,12 +574,23 @@ Footer styling
 	background-size: 60px 178px;
 }
 
+.li-b img {
+	width: 20px;
+	height: 15px;
+	margin-right: 10px; 
+}
+
 .linkedin a {
 	@extend %social;
 	&:hover {
-		color: $whitehover;
+		color: #0783B6;
 	}
+
+	 // style="text-decoration:none;"><span style="font: 80% Arial,sans-serif; color:#0783B6;"
+	 // style="vertical-align:middle;" border="0"
 }
+
+
 
 .currentBook {
 	margin: 0 10px 0px 20px;

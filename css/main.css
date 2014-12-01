@@ -242,10 +242,11 @@ Slider and button layout for landing page
   cursor: pointer;
 }
 
-.articles {
-  background-color: white;
-}
+/*****************************************
 
+Blog landing page layout and styles
+
+*****************************************/
 .container {
   float: left;
   width: 30%;
@@ -397,28 +398,35 @@ Footer styling
 }
 
 #footer-left-section {
-  width: 40vw;
+  width: 30vw;
   float: left;
 }
 
 #footer-middle-section, #footer-right-section {
-  width: 20vw;
+  width: 25vw;
   padding-top: 12px;
   float: left;
   padding: 0;
 }
 
-.about-me, .more-me {
+.about-me, .read-now {
   background-color: black;
-  padding: 25px 0 35px 0;
+  padding: 25px 5px 35px 0;
   border-bottom: 1px solid #292929;
 }
 
-.more-me {
+.read-now {
+  padding-bottom: 36px;
   border-left: 1px solid #292929;
 }
 
-.about-me h2, .more-me h2, .twitter-feed h2 {
+.blah-blah {
+  border-left: 1px solid #292929;
+  padding: 0px 0 20px 0;
+  clear: both;
+}
+
+.about-me h2, .read-now h2, .follow-me h2, .blah-blah h2, .twitter-feed h2 {
   font-size: 1.1em;
   font-weight: 300;
   color: #cccccc;
@@ -426,12 +434,23 @@ Footer styling
   letter-spacing: 1px;
 }
 
-.about-me h2, .more-me h2 {
-  margin: 25px 0 10px 0;
+.about-me h2, .read-now h2 {
+  margin-top: 25px;
 }
 
-.more-me h2 {
+.follow-me h2 {
+  margin-top: 25px;
+}
+
+.read-now h2 {
   margin-left: 5px;
+}
+
+.blah-blah h2 {
+  padding-top: 1vh;
+  margin-top: 0px;
+  margin-left: 5px;
+  margin-bottom: 0px;
 }
 
 .twitter-feed h2 {
@@ -444,22 +463,96 @@ Footer styling
 }
 
 .JK {
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
-.currentBook {
-  margin: 0px 10px 0 20px;
+.follow {
+  list-style: none;
+  line-height: 1.5em;
+}
+
+.tw a, .facebook a, .instagram a, .linkedin a {
+  color: #888888;
+  font-size: 0.8em;
+}
+
+.tw a:hover {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.tw-b- img {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.facebook a:hover {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.instagram a:hover {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.instagram span {
+  padding-left: 10px;
+}
+
+.ig-b- .tw-b .li-b {
+  display: inline;
+}
+
+.ig-b- img {
+  visibility: hidden;
+}
+
+.ig-b-:hover {
+  background-position: 0 -60px;
+}
+
+.ig-b-:active {
+  background-position: 0 -120px;
+}
+
+.ig-b-16 {
+  width: 16px;
+  height: 16px;
+  background: url(http://badges.instagram.com/static/images/ig-badge-sprite-16.png) no-repeat 0 0;
+  background-image: url(http://badges.instagram.com/static/images/ig-badge-sprite-16@2x.png);
+  background-size: 60px 178px;
+}
+
+.li-b img {
+  width: 20px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+.linkedin a:hover {
+  color: #0783B6;
+}
+
+.currentBook, .futureBook {
+  margin: 0 10px 0px 20px;
   display: inline-block;
+  max-width: 13vw;
+  height: 18vh;
 }
 
-.about-me p, .more-me p {
+.futureBook {
+  margin: 10px 10px;
+  height: 25vh;
+}
+
+.about-me p, .read-now p {
+  line-height: 1.5em;
+  margin: 15px 0 0 0;
   font-size: 1.1em;
-  margin: 0 10px 0 10px;
   font-weight: 250;
 }
 
-.about-me a:hover, .more-me a:hover, .more-me a:hover {
-  color: rgba(255, 255, 255, 0.8);
+.about-me a:hover, .read-now a:hover, .read-now a:hover {
+  color: rgba(255, 255, 255, 0.85);
 }
 
 .footer-link {
@@ -472,24 +565,69 @@ Footer styling
   padding: 2px;
   border-radius: 2px;
   transition: color 0.2s ease;
-  margin: 10px;
+  margin: 5px 10px;
 }
 
-.more-me span {
+.read-now p {
   font-size: 0.8em;
   font-weight: 250;
   color: #999999;
-  margin-top: 10px;
+  margin-top: 20px;
+  padding-right: 10px;
   transition: color 0.2s ease;
 }
 
-.more-me span:hover {
+.read-now p {
+  padding-bottom: 4vh;
+}
+
+.blah-blah p {
+  font-size: 0.8em;
+  font-weight: 250;
+  color: #999999;
+  margin-top: 20px;
+  padding-right: 10px;
+  padding-bottom: 5vh;
+  transition: color 0.2s ease;
+  line-height: 2em;
+}
+
+.read-now p:hover {
+  color: #cccccc;
+}
+
+.blah-blah p:hover {
   color: #cccccc;
 }
 
 .twitter-feed {
   background-color: black;
-  padding: 25px 0 150px 0;
-  border-bottom: 1px solid #292929;
+  padding-top: 25px;
   border-left: 1px solid #292929;
+}
+
+.twitter-timeline {
+  height: 55vh;
+  /*375px*/
+  overflow: hidden;
+  margin: 5px 0 10px 5px;
+}
+
+.contentinfo {
+  clear: both;
+  font-size: 0.75em;
+  width: 80vw;
+  text-align: center;
+  border-top: 1px solid #292929;
+  padding: 10px 0px 40px 0;
+  color: #666666;
+}
+.contentinfo a {
+  color: #888888;
+}
+.contentinfo a:hover {
+  color: rgba(255, 255, 255, 0.85);
+}
+.contentinfo span {
+  margin: 0 20px;
 }
