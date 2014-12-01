@@ -6,23 +6,23 @@
 //////////////////////////////////////////////////////////////////////////
 
   var locations = [
-    ['Dubai', 25.130900, 55.117200, 'desert-icon.png'],
-    ['Vietnam', 21.027764, 105.834160, 'peace-icon.png'],
-    ['<a href="http://www.google.com">Japan</a>', 35.689487, 139.691706, 'japanese-icon.png'],
-    ['China', 39.904211, 116.407395, 'hongkong-icon.png'],
-    ['Hong Kong', 22.396428, 114.109497, 'hongkong-icon.png'],
-    ['Koh Samui', 9.512017, 100.013593, 'beach-icon.png'],
-    ['Singapore', 1.352083, 103.819836, 'hongkong-icon.png'],
-    ['Bali', -8.409518, 115.188916, 'volcano-icon.png'],
-    ['Sydney', -33.867487, 151.206990, 'shore-icon.png'],
-    ['Hayman Island', -20.051547, 148.887349, 'beach-icon.png'],
-    ['New Zealand', -41.286460, 174.776236, 'hill-icon.png'],
-    ['Hawaii', 19.896766, -155.582782, 'sunset-icon.png'],
-    ['Los Angeles', 34.052234, -118.243685, 'surfing-icon.png'],
-    ['New Orleans', 29.951066, -90.071532, 'wetlands-icon.png'],
-    ['Miami', 25.761680, -80.191790, 'marina-icon.png'],
-    ['New York', 40.712784, -74.005941, 'hongkong-icon.png'],
-    ['Home Sweet Home', 51.507351, -0.127758, 'home-icon.png']
+    ['<a style="color:#df4747; padding:10px; font-weight: 400" href="http://www.tsunagujapan.com/" target="_blank"> Dubai </a>', 25.130900, 55.117200, 'desert-icon.png'],
+    ['<a style="color:#df4747; padding:10px; font-weight: 400" href="http://www.tsunagujapan.com/" target="_blank"> Vietnam </a>', 21.027764, 105.834160, 'peace-icon.png'],
+    ['<a style="color:#df4747; padding:10px; font-weight: 400" href="http://www.tsunagujapan.com/" target="_blank"> Japan </a>', 35.689487, 139.691706, 'japanese-icon.png'],
+    ['<a style="color:#df4747; padding:10px; font-weight: 400" href="http://www.tsunagujapan.com/" target="_blank"> China </a>', 39.904211, 116.407395, 'hongkong-icon.png'],
+    ['<a style="color:#df4747; padding:10px; font-weight: 400" href="http://www.tsunagujapan.com/" target="_blank"> Hong Kong </a>', 22.396428, 114.109497, 'hongkong-icon.png'],
+    ['<a style="color:#df4747; padding:10px; font-weight: 400" href="http://www.tsunagujapan.com/" target="_blank"> Koh Samui </a>', 9.512017, 100.013593, 'beach-icon.png'],
+    ['<a style="color:#df4747; padding:10px; font-weight: 400" href="http://www.tsunagujapan.com/" target="_blank"> Singapore </a>', 1.352083, 103.819836, 'hongkong-icon.png'],
+    ['<a style="color:#df4747; padding:10px; font-weight: 400" href="http://www.tsunagujapan.com/" target="_blank"> Bali </a>', -8.409518, 115.188916, 'volcano-icon.png'],
+    ['<a style="color:#df4747; padding:10px; font-weight: 400" href="http://www.tsunagujapan.com/" target="_blank"> Sydney </a>', -33.867487, 151.206990, 'shore-icon.png'],
+    ['<a style="color:#df4747; padding:10px; font-weight: 400" href="http://www.tsunagujapan.com/" target="_blank"> Hayman Island </a>', -20.051547, 148.887349, 'beach-icon.png'],
+    ['<a style="color:#df4747; padding:10px; font-weight: 400" href="http://www.tsunagujapan.com/" target="_blank"> New Zealand </a>', -41.286460, 174.776236, 'hill-icon.png'],
+    ['<a style="color:#df4747; padding:10px; font-weight: 400" href="http://www.tsunagujapan.com/" target="_blank"> Hawaii </a>', 19.896766, -155.582782, 'sunset-icon.png'],
+    ['<a style="color:#df4747; padding:10px; font-weight: 400" href="http://www.tsunagujapan.com/" target="_blank"> Los Angeles </a>', 34.052234, -118.243685, 'surfing-icon.png'],
+    ['<a style="color:#df4747; padding:10px; font-weight: 400" href="http://www.tsunagujapan.com/" target="_blank"> New Orleans </a>', 29.951066, -90.071532, 'wetlands-icon.png'],
+    ['<a style="color:#df4747; padding:10px; font-weight: 400" href="http://www.tsunagujapan.com/" target="_blank"> Miami </a>', 25.761680, -80.191790, 'marina-icon.png'],
+    ['<a style="color:#df4747; padding:10px; font-weight: 400" href="http://www.tsunagujapan.com/" target="_blank"> New York </a>', 40.712784, -74.005941, 'hongkong-icon.png'],
+    ['<a style="color:#df4747; padding:10px; font-weight: 400" href="http://www.tsunagujapan.com/" target="_blank"> Home Sweet Home </a>', 51.507351, -0.127758, 'home-icon.png']
   ];
   
   var map = new google.maps.Map(document.getElementById('map-canvas'), {
