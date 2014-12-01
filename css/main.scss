@@ -258,6 +258,37 @@ Slider and button layout for landing page
 }
 
 
+/*****************************************
+
+Map page styling
+
+*****************************************/
+
+
+#map-canvas {
+	margin: 80px auto 10px;	
+	width: 80vw;
+	height: 65vh;
+}
+
+.journey p {
+	color: $darkgrey;
+	font-size: 0.65em;
+	line-height: 1.5em;
+	margin: {
+		left: 10vw;
+		right: 10vw;}
+	a {
+		color: $red;
+		text-decoration: underline;
+		font-weight: 450;
+		&:hover {
+			color: $dirtyred;
+		}
+	}
+}
+
+
 
 /*****************************************
 
@@ -279,10 +310,10 @@ Blog landing page layout and styles
 }
 
 .brick h2 {
-	font-size: 1.45em;
+	font-size: 1.55em;
 	font-weight: 600;
 	margin: 7px 0 0 0;
-	letter-spacing: 2px;
+	letter-spacing: 1.5px;
 }
 
 .brick {
@@ -694,12 +725,3 @@ Footer styling
 		margin: 0 20px;
 	}
 }
-
-
-
-#map-canvas {
-	margin: 100px auto;	
-	width: 85vw;
-	height: 65vh;
-}
-
