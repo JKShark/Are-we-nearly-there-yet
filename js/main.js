@@ -50,44 +50,45 @@ $(document).scroll(function () {
 	}
 });
 
+
 //////////////////////////////////////////////////////////////////////////
 //
-// Moves blog posts on to the next or previous post
+// Google Maps
 //
 //////////////////////////////////////////////////////////////////////////
 
+function initializeMap() {
+  var mapOptions = {
+    zoom: 12,
+    center: new google.maps.LatLng(51.522534, -0.109436),
+    scrollWheel: true // If you want to disable zooming with scroll for now, set this to true
+  };
 
-// Make sure to add the link for each new blog post here
-// Needs to have one array for JK, one for M and one for A
+  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
-//var currentPostIndex = 0;
-//var jkposts = ["jk-why-write-a-blog.html", "jk-second-blog-post.html", "jk-third-blog-post.html"];
+  var office = new google.maps.Marker({
+      position: new google.maps.LatLng(51.522534, -0.109436),
+      map: map
+  });
 
+  var house = new google.maps.Marker({
+      position: new google.maps.LatLng(51.511049, -0.025729),
+      map: map
+  });
 
-//function previousPost() {
-  // Go to the previous image
-    // if (currentPostIndex > 0) {
-          // changePost(--currentPostIndex);
-    // } 
-// }
+  var infowindow = new google.maps.InfoWindow();
 
-// function nextPost() {
-  // Go to the next image
-    // if (currentPostIndex < jkposts.length-1) {
-            // changePost(++currentPostIndex);
-    // }
-// }
+  google.maps.event.addListener(house, 'click', function() {
+    infowindow.setContent('My house!');
+    infowindow.open(map, house);
+  });
 
-// function changePost() {
-  // $('.changePost').attr('href', jkposts[currentPostIndex]);
-// }
+  google.maps.event.addListener(office, 'click', function() {
+    infowindow.setContent('General Assembly!');
+    infowindow.open(map, office);
+  });
+}
 
-// $(document).ready(function() {
-  // $('#oldPost').on('click', previousPost);
-  // $('#newPost').on('click', nextPost);
-  // });
-
-  
-
+google.maps.event.addDomListener(window, 'load', initializeMap);
 
 

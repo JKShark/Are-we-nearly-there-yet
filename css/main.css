@@ -631,3 +631,9 @@ Footer styling
 .contentinfo span {
   margin: 0 20px;
 }
+
+#map-canvas {
+  margin: 100px auto;
+  width: 85vw;
+  height: 65vh;
+}
