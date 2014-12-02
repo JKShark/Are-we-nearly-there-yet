@@ -151,7 +151,7 @@ Sets the stying of the navigation bar
 #page-header {
 	position: fixed;
 	top: 0;
-	height: 64px;
+	height: 10vh;
 	width: 100vw;
 }
 
@@ -359,13 +359,6 @@ Individual blog page post styling
 	width: 100vw;
 }
 
-.alex {
-	background: url(San_Fran-1010.jpg) center center no-repeat;
-	background-size: 100vw;
-	height: 450px;
-	padding: 40px;
-}
-
 .post h1 {
 	font: {
 		family: $headingtext;
@@ -377,12 +370,35 @@ Individual blog page post styling
 	padding: 30px 0;
 }
 
-.post p {
-	color: $darkgrey;
+@mixin text($color) {
+	color: $color;
 	font-size: 0.65em;
 	margin: {
 		left: 25vw;
 		right: 25vw;}
+}
+
+.post p {
+	@include text($darkgrey);
+}
+
+.alex {
+	background: {
+		image: url(http://placekitten.com/g/2000/2000);
+		size: cover;
+		attachment: fixed;
+		position: center;}
+	width: 100vw;
+	padding-top: 10vh;
+}
+
+.alex p {
+	@include text($white);
+}
+
+.alex p:last-child {
+	padding-bottom: 15vh;
+	margin-bottom: 0px;
 }
 
 #meta {
@@ -391,7 +407,7 @@ Individual blog page post styling
 	clear: both;
 	font-weight: 400;
 	border-bottom: 1px solid $darkgreyborder;
-	margin-top: 40px;
+	// margin-top: 40px;
 	background: rgba(204, 204, 204, 0.2);
 }
 
