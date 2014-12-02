@@ -277,7 +277,6 @@ Blog landing page layout and styles
 .container {
   float: left;
   width: 30%;
-  height: 150px;
   padding: 10px;
   margin: 10px 10px 10px 20px;
   margin-top: 85px;
@@ -413,6 +412,7 @@ Footer styling
 *****************************************/
 #footer-container {
   float: left;
+  clear: both;
   width: 100%;
   background: black;
   color: #888888;
