@@ -151,8 +151,9 @@ Sets the stying of the navigation bar
 #page-header {
 	position: fixed;
 	top: 0;
-	height: 10vh;
+	height: 64px;
 	width: 100vw;
+	z-index: 1;
 }
 
 #page-header h1 {
@@ -195,7 +196,7 @@ Sets the stying of the navigation bar
 .active {
 	color: $dirtyred;
 	background-color: rgba( 225,227,227,0.4);
-	border-radius: 8px;
+	border-radius: 3px;
 }
 
 .photoset-grid-lightbox {
@@ -280,17 +281,24 @@ Map page styling
 	text-decoration: underline;
 	font-weight: 450;
 	&:hover {
-	color: $dirtyred;
+	color: $dirtyred;}
+}
+
+.journey {
+	background-color: white;
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+	width: 80vw;
+	margin: {
+		left: 10vw;
+		right: 10vw;
+	}
 }
 
 .journey p {
 	color: $darkgrey;
 	font-size: 0.65em;
-	line-height: 1.5em;
-	margin: {
-		left: 10vw;
-		right: 10vw;}
-	}
+	text-align: justify;
 }
 
 
@@ -365,9 +373,9 @@ Individual blog page post styling
 		size: 3rem;
 		weight: 300;}
 	color: $red;
-	margin: 15vh 25vw .5em 25vw;
+	margin: 10vh 25vw .5em 25vw;
 	line-height: 40px;
-	padding: 30px 0;
+	padding: 15vh 0 3vh;
 }
 
 @mixin text($color) {
@@ -382,21 +390,63 @@ Individual blog page post styling
 	@include text($darkgrey);
 }
 
+.post-shading {
+		margin: 0;
+		background-color: rgba(0,0,0,0.5);
+}
+
 .alex {
 	background: {
-		image: url(http://placekitten.com/g/2000/2000);
+		image: url(../blogposts/alex/San_Fran-1010.jpg);
 		size: cover;
 		attachment: fixed;
 		position: center;}
 	width: 100vw;
-	padding-top: 10vh;
+	height: 100%;
+	// padding-top: 10vh;
+}
+
+.alex h1 {
+	font: {
+		family: $headingtext;
+		size: 3rem;
+		weight: 300;}
+	color: #5EB2E6;
+	margin: 10vh 25vw .5em 25vw;
+	line-height: 40px;
+	padding: 15vh 0 3vh;
+}
+
+.madeleine h1 {
+	font: {
+		family: $headingtext;
+		size: 3rem;
+		weight: 400;}
+	color: #9A83EB;
+	margin: 10vh 25vw .5em 25vw;
+	line-height: 40px;
+	padding: 15vh 0 3vh;
+}
+.madeleine {
+	@extend .alex;
+	background-image: url(../blogposts/madeleine/San_Fran-1026.jpg);
 }
 
 .alex p {
 	@include text($white);
+	
+}
+
+.madeleine p {
+	@include text($white);
 }
 
 .alex p:last-child {
+	padding-bottom: 15vh;
+	margin-bottom: 0px;
+}
+
+.madeleine p:last-child {
 	padding-bottom: 15vh;
 	margin-bottom: 0px;
 }

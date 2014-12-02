@@ -49,4 +49,3 @@ $(document).scroll(function () {
 		header.removeClass('fixed');
 	}
 });
-
