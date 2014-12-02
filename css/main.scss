@@ -219,7 +219,7 @@ Slider and button layout for landing page
 
 .slide-viewer {
 	overflow: hidden;
-	height: 75vh;  /*update size of image here 430px*/
+	height: 75vh;
 }
 
 .slide-group {
@@ -233,6 +233,10 @@ Slider and button layout for landing page
 	height: 100%;
 	display: none;
 	position: absolute;
+}
+
+.slide img {
+	max-width: 100%;
 }
 
 .slide:first-child {
@@ -352,6 +356,13 @@ Individual blog page post styling
 	font-size: 1.5rem;
 	line-height: 1.5rem;
 	width: 100vw;
+}
+
+.alex {
+	background: url(San_Fran-1010.jpg) center center no-repeat;
+	background-size: 100vw;
+	height: 450px;
+	padding: 40px;
 }
 
 .post h1 {
