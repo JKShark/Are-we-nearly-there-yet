@@ -275,6 +275,14 @@ Map page styling
 	height: 65vh;
 }
 
+.link {
+	color: $red;
+	text-decoration: underline;
+	font-weight: 450;
+	&:hover {
+	color: $dirtyred;
+}
+
 .journey p {
 	color: $darkgrey;
 	font-size: 0.65em;
@@ -282,13 +290,6 @@ Map page styling
 	margin: {
 		left: 10vw;
 		right: 10vw;}
-	a {
-		color: $red;
-		text-decoration: underline;
-		font-weight: 450;
-		&:hover {
-			color: $dirtyred;
-		}
 	}
 }
 
@@ -414,13 +415,17 @@ Individual blog page post styling
 	padding: 15px 0 13px 0;
 	}
 
-	.categories {
+	.author {
 	width: 45vw;
 	font-size: 0.9em;
 	line-height: 1em;
-	padding-left: 2vw;
-	padding-top: 19px;
-	font-weight: $normalweight;
+	padding: {
+		left: 2vw;
+		top: 4px;}
+	font: {
+		weight: $normalweight;
+		family: $timetext;}
+	color: $lightgrey;
 	}
 
 	.old {

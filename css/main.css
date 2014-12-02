@@ -204,7 +204,6 @@ Slider and button layout for landing page
 .slide-viewer {
   overflow: hidden;
   height: 75vh;
-  /*update size of image here 430px*/
 }
 
 .slide-group {
@@ -218,6 +217,10 @@ Slider and button layout for landing page
   height: 100%;
   display: none;
   position: absolute;
+}
+
+.slide img {
+  max-width: 100%;
 }
 
 .slide:first-child {
@@ -253,20 +256,20 @@ Map page styling
   height: 65vh;
 }
 
-.journey p {
+.link {
+  color: #df4747;
+  text-decoration: underline;
+  font-weight: 450;
+}
+.link:hover {
+  color: #942f2f;
+}
+.link .journey p {
   color: #444444;
   font-size: 0.65em;
   line-height: 1.5em;
   margin-left: 10vw;
   margin-right: 10vw;
-}
-.journey p a {
-  color: #df4747;
-  text-decoration: underline;
-  font-weight: 450;
-}
-.journey p a:hover {
-  color: #942f2f;
 }
 
 /*****************************************
@@ -330,6 +333,13 @@ Individual blog page post styling
   width: 100vw;
 }
 
+.alex {
+  background: url(San_Fran-1010.jpg) center center no-repeat;
+  background-size: 100vw;
+  height: 450px;
+  padding: 40px;
+}
+
 .post h1 {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 3rem;
@@ -375,13 +385,15 @@ Individual blog page post styling
   letter-spacing: 1px;
   padding: 15px 0 13px 0;
 }
-#meta ul .categories {
+#meta ul .author {
   width: 45vw;
   font-size: 0.9em;
   line-height: 1em;
   padding-left: 2vw;
-  padding-top: 19px;
+  padding-top: 4px;
   font-weight: 300;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial, sans-serif;
+  color: #b2b2b2;
 }
 #meta ul .old {
   border-right: 1px solid rgba(204, 204, 204, 0.3);
