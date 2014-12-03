@@ -836,7 +836,7 @@ About this site styling
 }
 
 .accordian.open {
-  height: 275px;
+  height: 300px;
   overflow: scroll;
 }
 
@@ -846,4 +846,5 @@ About this site styling
 
 .about-the-blog {
   margin-left: 2vw;
+  margin-bottom: 10vh;
 }
