@@ -1,3 +1,17 @@
+
+//////////////////////////////////////////////////////////////////////////
+//
+// Accordian function
+//
+//////////////////////////////////////////////////////////////////////////
+
+$(document).ready(function () {
+  $('.accordian h1').on('click', function () {
+    $(this).parent().toggleClass('open');
+  });
+});
+
+
 //////////////////////////////////////////////////////////////////////////
 //
 // Photo grid settings
@@ -32,20 +46,3 @@ $('a.gallery').colorbox({title:function () {
     return "To view full size, " + "click here!".link(this.href);
 }});
 
-//////////////////////////////////////////////////////////////////////////
-//
-// Fixes header to top of page on scrolling landing page
-//
-//////////////////////////////////////////////////////////////////////////
-
-$(document).scroll(function () {
-  var viewportHeight = $(window).height();
-  var y = $(document).scrollTop(),
-		header = $('#page-header');
-
-	if (y >= viewportHeight) {
-		header.addClass('fixed');
-	} else {
-		header.removeClass('fixed');
-	}
-});

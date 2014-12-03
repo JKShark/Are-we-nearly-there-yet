@@ -1,7 +1,6 @@
 @import 'colors';
 $maintext:'Lato', sans-serif;
 $headingtext:'Source Sans Pro', sans-serif;
-$paratext:'Lato', sans-serif;
 $timetext:'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Arial, sans-serif;
 $normalweight: 300;
 
@@ -113,7 +112,7 @@ a {
 }
 
 p {
-	font-family: $paratext;
+	font-family: $maintext;
 	max-width: 100vw;
 }
 
@@ -838,15 +837,17 @@ About this site styling
 #main-container {
 	float: left;
 	clear: both;
+	margin-top: 64px;
 	width: 100%;
+	height:100%;
 	background: $white;
-	color: $footerdarkgrey;
+	color: $darkgrey;
 }
 
 #main-main {
 	width: 80vw;
 	background-color: $white;
-	margin: 10vh auto;
+	margin: 0 10vw;
 }
 
 #main-left {
@@ -856,10 +857,70 @@ About this site styling
 
 #main-right {
 	width: 40vw;
-	// padding-top: 12px;
 	float: left;
-	// padding: 0;
 }
 
+.about-this-site {
+	margin-right: 2vw;
+}
 
+.accordian {
+  width: 35vw;
+  height: 2rem;
+  overflow: hidden;
+  color: white;
+  transition: height 0.25s ease-in-out;
+  margin-bottom: 2vh;
+}
+
+.accordian h1 {
+  	font: {
+  		family: $maintext;
+  		size: 1.1em;
+		weight: 500;}
+	margin: 7px 0 0 0;
+  	background-color: rgba(148, 47, 47, 0.9);
+  	border-radius: 3px;
+  	color:white;
+  	padding:0 0.5rem;
+  	margin-top:0;
+  	line-height:2rem;
+  	cursor: pointer;
+}
+
+.accordian p {
+ 	margin: 2vh 1vw;
+	color: $footerdarkgrey;
+	font-size: 0.9em;
+	line-height: 1.5em;
+}
+
+.accordian li {
+ 	margin: 2vh 1vw;
+	color: $footerdarkgrey;
+	font-size: 0.9em;
+	// line-height: 1.5em;
+}
+
+.accordian strike {
+	color: $dirtyred;
+}
+
+.accordian a {
+	color: $footerdarkgrey;
+	font-size: 1em;	
+}
+
+.accordian.open {
+  height:275px;
+  overflow:scroll;
+}
+
+.statistics {
+	margin-left: 2vw;
+}
+
+.about-the-blog {
+	margin-left: 2vw;
+}
 
