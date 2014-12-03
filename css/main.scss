@@ -210,11 +210,12 @@ Slider and button layout for landing page
 *****************************************/
 
 .slider {
-	width: 85vw; /*1024px*/
+	width: 65vw;
 	height: 75vh;
 	position: fixed;
 	top: 15vh;
-	left: 10vw;
+	left: 17.5vw;
+	
 }
 
 .slide-viewer {
@@ -259,6 +260,113 @@ Slider and button layout for landing page
 .slide-btn.active, .slide-btn:hover {
 	color: $lightgrey; 
 	cursor: pointer;
+}
+
+
+/*****************************************
+
+About this site styling
+
+*****************************************/
+
+#main-container {
+	float: left;
+	clear: both;
+	margin-top: 64px;
+	width: 100%;
+	height:100%;
+	background: $white;
+	color: $darkgrey;
+}
+
+#main-main {
+	width: 80vw;
+	background-color: $white;
+	margin: 0 10vw;
+}
+
+#main-left {
+	width: 40vw;
+	float: left;
+}
+
+#main-right {
+	width: 40vw;
+	float: left;
+}
+
+.about-this-site {
+	margin-right: 2vw;
+}
+
+.accordian {
+  width: 35vw;
+  height: 2rem;
+  overflow: hidden;
+  color: white;
+  transition: height 0.25s ease-in-out;
+  margin-bottom: 2vh;
+}
+
+.accordian h1 {
+  	font: {
+  		family: $maintext;
+  		size: 1.1em;
+		weight: 400;}
+	margin: 7px 0 0 0;
+  	background-color: rgba(148, 47, 47, 0.9);
+  	border-radius: 3px;
+  	color: white;
+  	padding:0 0.5rem;
+  	margin-top:0;
+  	line-height:2rem;
+  	cursor: pointer;
+}
+
+.accordian p {
+ 	margin: 2vh 1vw;
+	color: $footerdarkgrey;
+	font-size: 0.9em;
+	line-height: 1.5em;
+}
+
+.accordian li {
+ 	margin: 2vh 1vw;
+	color: $footerdarkgrey;
+	font-size: 0.9em;
+	// line-height: 1.5em;
+}
+
+.accordian strike {
+	color: $dirtyred;
+}
+
+.accordian a {
+	color: $footerdarkgrey;
+	font-size: 1em;	
+}
+
+.a-first.open {
+  height:220px;
+  overflow:scroll;
+}
+
+.a-second.open {
+  height:230px;
+  overflow:scroll;
+}
+.a-third.open {
+  height:290px;
+  overflow:scroll;
+}
+
+.statistics {
+	margin-left: 2vw;
+}
+
+.about-the-blog {
+	margin-left: 2vw;
+	margin-bottom: 10vh;
 }
 
 
@@ -566,7 +674,7 @@ Footer styling
 
 #footer-middle-section {
 	width: 25vw;
-	padding-top: 12px;
+	padding-top: 1.5vh;
 	float: left;
 	padding: 0;
 }
@@ -577,19 +685,23 @@ Footer styling
 
 .about-me {
 	background-color: $black;
-	padding: 25px 5px 35px 0;
+	padding: 3vh 1vw 5vh 0;
 	border-bottom: 1px solid $footerborders;
 }
 
 .read-now {
 	@extend .about-me;
-	padding-bottom: 36px;
-	border-left: 1px solid $footerborders;
+	padding-bottom: 5vh;
+	border: {
+		left: 1px solid $footerborders;
+		right: 1px solid $footerborders;}
 }
 
 .blah-blah   {
-	border-left: 1px solid $footerborders;	
-	padding: 0px 0 20px 0;
+	border: {
+		left: 1px solid $footerborders;
+		right: 1px solid $footerborders;}	
+	padding: 0px 0 3vw 0;
 	clear: both;
 
 }
@@ -605,31 +717,33 @@ Footer styling
 
 .about-me h2 {
 	@extend %footer-h2;
-	margin-top: 25px;
+	margin-top: 3vh;
 }
 
 .follow-me h2 {
 	@extend %footer-h2;
-	margin-top: 25px;
+	margin-top: 3vh;
 }
 
 .read-now h2 {
 	@extend %footer-h2;
-	margin-left: 5px;
+	margin-left: 1vw;
 }
 
 .blah-blah h2 {
 	@extend %footer-h2;
-	padding-top: 1vh;
+	padding-top: 2vh;
 	margin: {
-		top: 0px;
-		left: 5px;
-		bottom: 0px;}
+		top: 0;
+		left: 1vw;
+		bottom: 1vh;}
 }
 
 .twitter-feed h2 {
 	@extend %footer-h2;
-	margin: 25px 0 10px 10px;
+	// margin: 25px 0 10px 10px;
+	margin-top: 3vh;
+	margin-left: 1vw;
 }
 
 .left {
@@ -640,6 +754,12 @@ Footer styling
 .JK {
 	margin-top: 10px;
 }
+
+.JK-large {
+	margin-top: 5px;
+	width: 15vw;
+}
+
 
 .follow {
 	list-style: none;
@@ -734,8 +854,8 @@ Footer styling
 
 .futureBook {
 	@extend .currentBook;
-	margin: 10px 10px ;
-	height: 25vh;
+	margin: 1.25vh 1.25vw;
+	height: 20vh;
 }
 
 .about-me p {
@@ -756,10 +876,10 @@ Footer styling
 	letter-spacing: 2px;
 	color: $footerdarkgreybutton;
 	background-color: $footerdarkgreybuttonbackground;
-	padding: 2px;
+	padding: 0.2vh 0.3vw;
 	border-radius: 2px;
 	transition: color 0.2s ease;
-	margin: 5px 10px;
+	margin: 1vh 1.25vw;
 }
 
 %central-text {
@@ -767,8 +887,8 @@ Footer styling
 		size: 0.8em;
 		weight: 250;}
 	color: $arrowcolor;
-	margin-top: 20px;
-	padding-right: 10px;
+	padding-top: 3vh;
+	padding-right: 1.5vw;
 	transition: color 0.2s ease;
 }
 
@@ -782,9 +902,9 @@ Footer styling
 		size: 0.8em;
 		weight: 250;}
 	color: $arrowcolor;
-	margin-top: 20px;
+	margin-top: 5vh;
 	padding-right: 10px;
-	padding-bottom: 5vh;
+	margin-bottom: 5vh;
 	transition: color 0.2s ease;
 	line-height: 2em;
 }
@@ -798,14 +918,13 @@ Footer styling
 
 .twitter-feed {
 	background-color: $black;
-	padding-top: 25px;
-	border-left: 1px solid $footerborders;
+	padding-top: 3vh;
 }
 
 .twitter-timeline {
-	height: 55vh; /*375px*/
+	height: 57vh; /*375px*/
 	overflow: hidden;
-	margin: 5px 0 10px 5px;
+	margin: 1vh 0 1.2vh 1vw;
 	
 }
 
@@ -815,7 +934,7 @@ Footer styling
 	width: 80vw;
 	text-align: center;
 	border-top: 1px solid $footerborders;
-	padding: 10px 0px 40px 0;
+	padding: 1.2vh 0px 1.2vh 0;
 	color: $footerdarkgreybutton;
 	a {
 		color: $footerdarkgrey;
@@ -824,104 +943,7 @@ Footer styling
 		}
 	}
 	span {
-		margin: 0 20px;
+		margin: 0 3vw;
 	}
-}
-
-/*****************************************
-
-About this site styling
-
-*****************************************/
-
-#main-container {
-	float: left;
-	clear: both;
-	margin-top: 64px;
-	width: 100%;
-	height:100%;
-	background: $white;
-	color: $darkgrey;
-}
-
-#main-main {
-	width: 80vw;
-	background-color: $white;
-	margin: 0 10vw;
-}
-
-#main-left {
-	width: 40vw;
-	float: left;
-}
-
-#main-right {
-	width: 40vw;
-	float: left;
-}
-
-.about-this-site {
-	margin-right: 2vw;
-}
-
-.accordian {
-  width: 35vw;
-  height: 2rem;
-  overflow: hidden;
-  color: white;
-  transition: height 0.25s ease-in-out;
-  margin-bottom: 2vh;
-}
-
-.accordian h1 {
-  	font: {
-  		family: $maintext;
-  		size: 1.1em;
-		weight: 500;}
-	margin: 7px 0 0 0;
-  	background-color: rgba(148, 47, 47, 0.9);
-  	border-radius: 3px;
-  	color:white;
-  	padding:0 0.5rem;
-  	margin-top:0;
-  	line-height:2rem;
-  	cursor: pointer;
-}
-
-.accordian p {
- 	margin: 2vh 1vw;
-	color: $footerdarkgrey;
-	font-size: 0.9em;
-	line-height: 1.5em;
-}
-
-.accordian li {
- 	margin: 2vh 1vw;
-	color: $footerdarkgrey;
-	font-size: 0.9em;
-	// line-height: 1.5em;
-}
-
-.accordian strike {
-	color: $dirtyred;
-}
-
-.accordian a {
-	color: $footerdarkgrey;
-	font-size: 1em;	
-}
-
-.accordian.open {
-  height:300px;
-  overflow:scroll;
-}
-
-.statistics {
-	margin-left: 2vw;
-}
-
-.about-the-blog {
-	margin-left: 2vw;
-	margin-bottom: 10vh;
 }
 

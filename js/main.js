@@ -6,7 +6,19 @@
 //////////////////////////////////////////////////////////////////////////
 
 $(document).ready(function () {
-  $('.accordian h1').on('click', function () {
+  $('.a-first h1').on('click', function () {
+    $(this).parent().toggleClass('open');
+  });
+});
+
+$(document).ready(function () {
+  $('.a-second h1').on('click', function () {
+    $(this).parent().toggleClass('open');
+  });
+});
+
+$(document).ready(function () {
+  $('.a-third h1').on('click', function () {
     $(this).parent().toggleClass('open');
   });
 });
