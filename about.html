@@ -2,10 +2,10 @@
 <html lang="en-us">
 	<head>
 		<meta charset="utf-8">
-		<title>JK Blog</title>
-		<link rel="stylesheet" href="../../css/normalize.css">
+		<title>About me</title>
+		<link rel="stylesheet" href="css/normalize.css">
 		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="../../css/main.css">
+		<link rel="stylesheet" href="css/main.css">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>		      
 		<meta name="viewport" content="width=device‐width, initial‐scale=1">
 	</head>
@@ -16,60 +16,59 @@
 		<h1><a href="../../index.html">Home</a></h1>
 			<nav>	
 				<ul>
-					<li><a href="../../photos_SanFrancisco.html">Photos</a></li>
-					<li><a href="../../blog-home.html">Blog</a></li>			
-					<li><a href="../../maps/map.html">Our Journey</a></li>			
-					<li><a href="#">About</a></li>		
+					<li><a href="photos_SanFrancisco.html">Photos</a></li>
+					<li><a href="blog-home.html">Blog</a></li>			
+					<li><a href="maps/map.html">Our Journey</a></li>			
+					<li class="active"><a href="#">About</a></li>		
 				</ul>
 			</nav>
 	</header>
 
-<!-- This is all the JK article excerts which occupy the left hand column and scrolls down forever -->	
-	
-	<div class="layout cf">		
-		<article class="post">
-			<div>
-				<h1>Why write anything at all?</h1>
+	<div id="main-containter">
+		<div id="main-main">
 
-				<p>There are a million blogs out there (probably). And I’d guess  less than 0.1% are worth reading. Why add to the noise?</p>
-
-				<p>It started out as a personal project and became a bit of an obsession.</p>
-
-				<p>I wanted to learn some new skills. Inspired perhaps by all the new stuff my children are learning on a daily basis. So I enrolled in evening classes to learn to code. This web site is the result. And I’ve loved every minute of it.</p>
-
-				<p>And now I feel I need to put it to use. To give it some content. To breathe life into it.</p>
-
-				<p>But I haven’t written anything other than emails for about 15 years. And certainly nothing like this.</p>
-
-				<p>I’ve read that if you practice writing every day, you will get better. I guess I’ll see. And you can be the judge.</p>
-
+			<div id="main-left">
+				<div class="about-this-site">
+					<h2>About this site</h2>
+					
+					<p>
+					I am a web designer, entrepreneur, angel investor and business advisor (or just substitute unemployed for all of the above!)
+					</p>
+					
+				</div>
 			</div>
-		</article>
+
+			<div id="main-right">
+				<div class="statistics">
+					<h2>What we've done so far</h2>
+					
+						<p>
+						There is nothing like a good book on Javascript to make those long flights fly by.
+						</p>
+					</a></br>
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+		</div>
+
+
+
+
+
+
 	</div>
 
-	<div id="meta">
-		<ul>
-			<li class="date">
-				<time datetime ="2014-12-1">Dec 1</time>
-			</li>
-			<!-- Insert categories class here if I ever get a search function to work -->
-			<li class="author">
-				<p>Author: JK</p>
-			</li>
-			
-			<li class="arrow old">
-				<span>
-					<a href="#">←</a>
-				</span>
-			</li>
 
-			<li class="arrow new">
-				<span>
-					<a href="jk-ga-rocks.html">→</a>
-				</span>
-			</li>
-		</ul>
-	</div>
+
+
+
 	
 	<footer id="footer-container">
 		<div id="footer-main">
@@ -78,15 +77,15 @@
 				<div class="about-me">
 					<h2>All about me</h2>
 					
-					<a href="../../about.html">
-						<img class="left JK" src="../../images/footer/JK_web.jpg" title="JK">
+					<a href="#">
+						<img class="left JK" src="images/footer/JK_web.jpg" title="JK">
 					</a>
 
 					<p>
 					I am a web designer, entrepreneur, angel investor and business advisor (or just substitute unemployed for all of the above!)
 					</p>
 					
-					<a class="footer-link" href="../../about.html">learn more</a>
+					<a class="footer-link" href="#">learn more</a>
 				</div>
 
 				<div class="follow-me">
@@ -94,21 +93,22 @@
 					<ul class="follow">
 						
 						<li class="tw">
-							<a href="https://twitter.com/jkshark" class="tw-b-" target="_blank"><img src="../../images/footer/Twitter_logo_blue.png">Follow me on Twitter</a>
+							<a href="https://twitter.com/jkshark" class="tw-b-" target="_blank"><img src="images/footer/Twitter_logo_blue.png">Follow me on Twitter</a>
 						</li>
 						
 						<li class="facebook">
-							<a href="https://www.facebook.com/jk.jkshark" class="fb-b-" target="_blank"><img src="../../images/footer/FB_logo.png">Here too</a>
+							<a href="https://www.facebook.com/jk.jkshark" class="fb-b-" target="_blank"><img src="images/footer/FB_logo.png">Here too</a>
 						</li>
 						
 						<li class="instagram">
+							
 							<a href="http://instagram.com/kaye_jonathan?ref=badge" class="ig-b- ig-b-16" target="_blank"><img src="http://badges.instagram.com/static/images/ig-badge-16.png" alt="Instagram"><span>My Photos are on here</span></a>
 							
 						</li>
 						
 						<li class="linkedin">
 							
-							<a href="http://uk.linkedin.com/in/kayejonathan" class="li-b" target="_blank"><img src="../../images/footer/Linked_logo.png" alt="LinkedIn"><span>Or find me on LinkedIn</span></a>
+							<a href="http://uk.linkedin.com/in/kayejonathan" class="li-b" target="_blank"><img src="images/footer/Linked_logo.png" alt="LinkedIn"><span>Or find me on LinkedIn</span></a>
 
 						</li>
 					</ul>
@@ -122,7 +122,7 @@
 					<h2>What we're reading</h2>
 					
 					<a href="http://www.amazon.co.uk/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742" target="_blank">
-						<img class="left currentBook" src="../../images/footer/JS_book.jpg">
+						<img class="left currentBook" src="images/footer/JS_book.jpg">
 						<p>
 						There is nothing like a good book on Javascript to make those long flights fly by.
 						</p>
@@ -135,7 +135,7 @@
 					<h2>Blah Blah</h2>
 					
 					<a href="http://luxecityguides.com/destination/dubai/" target="_blank">
-						<img class="left futureBook" src="../../images/footer/Dubai_luxe.jpg">
+						<img class="left futureBook" src="images/footer/Dubai_luxe.jpg">
 						<p>
 						We are absolutely loving these travel guides. Small, lightweight and full of up to date advice.
 						</p>
@@ -158,7 +158,7 @@
 				<p>
 				Copyright &copy 2014
 				<span>•</span>
-				<a href="about.html">Jonathan Kaye</a>
+				<a href="#">Jonathan Kaye</a>
 				<span>•</span>  
 				<a href="mailto:kaye_jonathan@hotmail.com">Contact me</a>
 				

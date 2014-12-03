@@ -194,7 +194,7 @@ Sets the stying of the navigation bar
 }
 
 .active {
-	color: $dirtyred;
+	// color: $white;
 	background-color: rgba( 225,227,227,0.4);
 	border-radius: 3px;
 }
@@ -388,6 +388,11 @@ Individual blog page post styling
 
 .post p {
 	@include text($darkgrey);
+
+}
+
+.post p:last-child {
+			padding-bottom: 15vh;
 }
 
 .post-shading {
@@ -403,7 +408,6 @@ Individual blog page post styling
 		position: center;}
 	width: 100vw;
 	height: 100%;
-	// padding-top: 10vh;
 }
 
 .alex h1 {
@@ -412,7 +416,7 @@ Individual blog page post styling
 		size: 3rem;
 		weight: 300;}
 	color: #5EB2E6;
-	margin: 10vh 25vw .5em 25vw;
+	margin: 10vh 27vw .5em 27vw;
 	line-height: 40px;
 	padding: 15vh 0 3vh;
 }
@@ -434,11 +438,27 @@ Individual blog page post styling
 
 .alex p {
 	@include text($white);
+	font-size: 0.85em;
+	line-height: 1.5em;
+	margin: {
+		left: 27vw;
+		right: 27vw;}
 	
 }
 
 .madeleine p {
 	@include text($white);
+	font-size: 0.75em;
+	margin: {
+		left: 17vw;
+		right: 17vw;}
+
+}
+
+.post p:last-child {
+	padding-bottom: 15vh;
+	margin-bottom: 0px;
+
 }
 
 .alex p:last-child {
@@ -704,12 +724,7 @@ Footer styling
 	&:hover {
 		color: #0783B6;
 	}
-
-	 // style="text-decoration:none;"><span style="font: 80% Arial,sans-serif; color:#0783B6;"
-	 // style="vertical-align:middle;" border="0"
 }
-
-
 
 .currentBook {
 	margin: 0 10px 0px 20px;
@@ -813,3 +828,38 @@ Footer styling
 		margin: 0 20px;
 	}
 }
+
+/*****************************************
+
+About this site styling
+
+*****************************************/
+
+#main-container {
+	float: left;
+	clear: both;
+	width: 100%;
+	background: $white;
+	color: $footerdarkgrey;
+}
+
+#main-main {
+	width: 80vw;
+	background-color: $white;
+	margin: 10vh auto;
+}
+
+#main-left {
+	width: 40vw;
+	float: left;
+}
+
+#main-right {
+	width: 40vw;
+	// padding-top: 12px;
+	float: left;
+	// padding: 0;
+}
+
+
+

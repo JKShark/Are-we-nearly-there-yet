@@ -179,7 +179,6 @@ Sets the stying of the navigation bar
 }
 
 .active {
-  color: #942f2f;
   background-color: rgba(225, 227, 227, 0.4);
   border-radius: 3px;
 }
@@ -359,6 +358,10 @@ Individual blog page post styling
   margin-right: 25vw;
 }
 
+.post p:last-child {
+  padding-bottom: 15vh;
+}
+
 .post-shading {
   margin: 0;
   background-color: rgba(0, 0, 0, 0.5);
@@ -378,7 +381,7 @@ Individual blog page post styling
   font-size: 3rem;
   font-weight: 300;
   color: #5EB2E6;
-  margin: 10vh 25vw .5em 25vw;
+  margin: 10vh 27vw .5em 27vw;
   line-height: 40px;
   padding: 15vh 0 3vh;
 }
@@ -402,6 +405,10 @@ Individual blog page post styling
   font-size: 0.65em;
   margin-left: 25vw;
   margin-right: 25vw;
+  font-size: 0.85em;
+  line-height: 1.5em;
+  margin-left: 27vw;
+  margin-right: 27vw;
 }
 
 .madeleine p {
@@ -409,6 +416,14 @@ Individual blog page post styling
   font-size: 0.65em;
   margin-left: 25vw;
   margin-right: 25vw;
+  font-size: 0.75em;
+  margin-left: 17vw;
+  margin-right: 17vw;
+}
+
+.post p:last-child {
+  padding-bottom: 15vh;
+  margin-bottom: 0px;
 }
 
 .alex p:last-child, .madeleine p:last-child {
@@ -738,4 +753,33 @@ Footer styling
 }
 .contentinfo span {
   margin: 0 20px;
+}
+
+/*****************************************
+
+About this site styling
+
+*****************************************/
+#main-container {
+  float: left;
+  clear: both;
+  width: 100%;
+  background: white;
+  color: #888888;
+}
+
+#main-main {
+  width: 80vw;
+  background-color: white;
+  margin: 10vh auto;
+}
+
+#main-left {
+  width: 40vw;
+  float: left;
+}
+
+#main-right {
+  width: 40vw;
+  float: left;
 }
