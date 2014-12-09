@@ -34,12 +34,12 @@ html {
 	font-size: 18px;
 }
 
-@media (max-width: 640px) {
+@media screen and (max-width: 640px) {
   html {
   	font-size: 16px; }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   html {
   	font-size: 14px; }
 }
@@ -153,6 +153,7 @@ Sets the stying of the navigation bar
 	height: 64px;
 	width: 100vw;
 	z-index: 1;
+	
 }
 
 #page-header h1 {
@@ -160,13 +161,11 @@ Sets the stying of the navigation bar
 	width: 30vw;
 	float: left;
 	margin: 14px 0 18px 20px;
-}
-
-#page-header h2 {
-	display: inline-block;
-	width: 30vw;
-	float: left;
-	margin: 14px 0 18px 10px;
+	@media screen and (max-width: 640px) {
+		width: 65vw;
+		margin-left: 17.5vw;
+		text-align: center;
+	}
 }
 
 #main {
@@ -246,6 +245,68 @@ nav li li a:hover {
 	margin-top: 64px;
 }
 
+/*****************************************
+
+Responsive Nav Bar
+
+*****************************************/
+
+#full-screen {
+	@media screen and (max-width: 640px) {
+		display: none;
+	}
+}
+
+#small-screen {
+	@media screen and (min-width: 640px) {
+		display: none;
+	}	
+}
+
+#menuButton {
+	color: $darkgrey;
+	width: 10vw;
+	float: right;
+	margin: 3.5vh 2vw 0 3vw;
+	display: inline-block;
+	background-color: $lightgrey;
+	padding: 2px;
+	text-align: center;
+	border-radius: 2px;	
+}
+
+.hiddenMenu {
+	width: 30vw;
+	height: 30vh;
+	position: absolute;
+	right: -50vw;
+	top: 64px;
+	clear: both;
+	background-color: rgba(178, 178, 178, 0.6);
+	border-radius: 5px 0 0 5px;
+	@media screen and (max-width: 600px) {
+		width: 35vw;
+	}
+	@media screen and (max-width: 480px) {
+		width: 40vw;
+	}
+}
+
+.hiddenMenu ul {
+	text-align: right;
+	li {
+		margin: 0;
+		clear: both;
+		display: block;
+		padding: 3vh auto;
+	}
+}
+
+.closeButton {
+	padding: 10px 10px 5px 10px;
+	color: $darkgrey;
+	border-bottom: 1px solid $darkgrey;
+}
 
 /*****************************************
 
