@@ -77,6 +77,9 @@ h1 {
 
 h2 {
 	color: $red;
+	@media screen and (max-width: 480px) {
+		text-align: center;
+	}
 }
 
 h3 {
@@ -282,7 +285,7 @@ Responsive Nav Bar
 	right: -50vw;
 	top: 64px;
 	clear: both;
-	background-color: rgba(178, 178, 178, 0.6);
+	background-color: rgba(178, 178, 178, 0.85);
 	border-radius: 5px 0 0 5px;
 	@media screen and (max-width: 600px) {
 		width: 35vw;
@@ -393,11 +396,20 @@ About this site styling
 #main-left {
 	width: 40vw;
 	float: left;
+	@media screen and (max-width: 480px) {
+		clear: both;
+		width: auto;
+	}
+
 }
 
 #main-right {
 	width: 40vw;
 	float: left;
+	@media screen and (max-width: 480px) {
+		clear: both;
+		width: auto;
+	}
 }
 
 .about-this-site {
@@ -411,6 +423,9 @@ About this site styling
   color: white;
   transition: height 0.25s ease-in-out;
   margin-bottom: 2vh;
+  @media screen and (max-width: 480px) {
+		width: auto;
+	}
 }
 
 .accordian h1 {
@@ -452,16 +467,16 @@ About this site styling
 }
 
 .a-first.open {
-  height:220px;
+  height:30vh;
   overflow:scroll;
 }
 
 .a-second.open {
-  height:230px;
+  height:31vh;
   overflow:scroll;
 }
 .a-third.open {
-  height:290px;
+  height:45vh;
   overflow:scroll;
 }
 

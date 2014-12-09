@@ -31,8 +31,7 @@ $(document).ready(function () {
 //
 //////////////////////////////////////////////////////////////////////////
 
-$('#menuButton').click(function()
-{
+$('#menuButton').click(function() {
     $('.hiddenMenu').animate({"right":"0px"}, 1000);
 });
 
