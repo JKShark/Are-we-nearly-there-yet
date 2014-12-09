@@ -864,3 +864,9 @@ Footer styling
 .contentinfo span {
   margin: 0 3vw;
 }
+
+#disqus_thread {
+  width: 500px;
+  height: 500px;
+  color: black;
+}
