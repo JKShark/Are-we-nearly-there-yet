@@ -169,11 +169,18 @@ Sets the stying of the navigation bar
 	margin: 14px 0 18px 10px;
 }
 
-#page-header nav ul {
-	list-style-type: none;
-	overflow: hidden;
-}
+#main {
+	display: inline;
+	float: right;
+	list-style: none;
+	text-align: right;
+	height: 64px;
+	width: 6vw; 
+} /* only edit the last 2 items - sets the width of the main menu */
 
+.dropdown_heading {
+	color: $darkgrey;
+}
 #page-header nav li {
 	float: right;
 	margin-left: 2.25vw;
@@ -182,6 +189,44 @@ Sets the stying of the navigation bar
 	height: 28px;
 	padding: 2px 10px 0 10px;
 }
+
+nav li ul {
+	// margin: 0px;
+	padding: 3px 0px;
+	margin-bottom: 2px;
+	display: none;
+	position: absolute;
+	right: 0px;
+	z-index: 99;
+	top: 6vh;
+	// background-color: rgba(227, 225, 225, 0.5);
+} /* Only edit the last 2 items - set the top margin and background color of the submenus */
+
+nav li:hover ul {
+	display: block;
+	text-align: right;
+	width: 15vw;
+	font-size: 0.9em;
+} /* sets the width of the submenus */
+
+#subnav li {
+	list-style: none;
+	display: list-item;
+} /* DO NOT EDIT */
+
+nav li li:first-child {
+	margin-top: 2vh;
+}
+
+nav li li a {
+	color:$darkgrey;
+	text-decoration:none;
+} /* Changes the link color of items in the submenu */
+
+nav li li a:hover {
+	color:$dirtyred;
+	text-decoration:none;
+} /* Changes the hover color of items in the submenu */
 
 #page-header nav a {
 	transition: color 0.2s ease, border-bottom 0.4s ease-out;
@@ -193,7 +238,6 @@ Sets the stying of the navigation bar
 }
 
 .active {
-	// color: $white;
 	background-color: rgba( 225,227,227,0.4);
 	border-radius: 3px;
 }
