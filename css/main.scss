@@ -416,6 +416,12 @@ About this site styling
 	margin-right: 2vw;
 }
 
+.about-this-site h2 {
+	@media screen and (max-width: 480px) {
+		display: none;
+	}
+}
+
 .accordian {
   width: 35vw;
   height: 2rem;
@@ -484,6 +490,10 @@ About this site styling
 	margin-left: 2vw;
 }
 
+#date_message {
+	font-weight: bold;
+}
+
 .about-the-blog {
 	margin-left: 2vw;
 	margin-bottom: 10vh;
@@ -540,8 +550,18 @@ Blog landing page layout and styles
 	float: left;
 	width: 30%;
 	padding: 10px;
-	margin: 10px 10px 10px 20px;
-	margin-top: 85px;
+	margin: 12vh 1vw 1vh 2vw;
+	@media screen and (max-width: 480px) {
+		clear: both;
+		width: auto;
+		margin-top: 1vh;
+	}
+}
+
+.container:first-child {
+	@media screen and (max-width: 480px) {
+		margin-top: 10vh;
+	}	
 }
 
 .layout {
@@ -578,6 +598,10 @@ Blog landing page layout and styles
 	text-transform: uppercase;
 	padding: 0 0 10px 0;
 	border-bottom: solid 2px $lightgreyborder;
+	@media screen and (max-width: 480px) {
+		text-align: center;
+		font-size: 1.25rem;
+	}
 }
 
 
@@ -603,11 +627,20 @@ Individual blog page post styling
 	margin: 10vh 25vw .5em 25vw;
 	line-height: 40px;
 	padding: 15vh 0 3vh;
+	@media screen and (max-width: 640px) {
+		font-size: 2.75rem;
+		margin: 5vh 17vw 0 17vw;
+	}
+	@media screen and (max-width: 480px) {
+		font-size: 2.5rem;
+		margin: 5vh 10vw 0 10vw;
+	}
+
 }
 
 @mixin text($color) {
 	color: $color;
-	font-size: 0.65em;
+	font-size: 0.7em;
 	margin: {
 		left: 25vw;
 		right: 25vw;}
@@ -615,7 +648,16 @@ Individual blog page post styling
 
 .post p {
 	@include text($darkgrey);
-
+	@media screen and (max-width: 640px) {
+		margin: {
+			left: 17vw;
+			right: 17vw;}
+	}
+	@media screen and (max-width: 480px) {
+		margin: {
+			left: 10vw;
+			right: 10vw;}
+	}
 }
 
 .post p:last-child {
@@ -654,8 +696,8 @@ Individual blog page post styling
 		size: 3rem;
 		weight: 400;}
 	color: #9A83EB;
-	margin: 10vh 25vw .5em 25vw;
-	line-height: 40px;
+	margin: 10vh 17vw .5em 17vw;
+	line-height: 5vh;
 	padding: 15vh 0 3vh;
 }
 .madeleine {
@@ -725,16 +767,16 @@ Individual blog page post styling
 	font-weight: $normalweight;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	padding: 15px 0 13px 0;
+	padding: 2vh 0;
 	}
 
 	.author {
-	width: 45vw;
+	width: 40vw;
 	font-size: 0.9em;
 	line-height: 1em;
 	padding: {
 		left: 2vw;
-		top: 4px;}
+		top: 0.5vh;}
 	font: {
 		weight: $normalweight;
 		family: $timetext;}
@@ -790,6 +832,12 @@ Footer styling
 #footer-left-section {
 	width: 30vw;
 	float: left;
+	@media screen and (max-width: 640px) {
+		width: 40vw;
+	}
+	@media screen and (max-width: 480px) {
+		width: 80vw;
+	}
 }
 
 #footer-middle-section {
@@ -797,16 +845,32 @@ Footer styling
 	padding-top: 1.5vh;
 	float: left;
 	padding: 0;
+	@media screen and (max-width: 640px) {
+		width: 40vw;
+	}
+	@media screen and (max-width: 480px) {
+		clear: both;
+		float: none;
+		width: 80vw;
+	}
 }
 
 #footer-right-section {
 	@extend #footer-middle-section;
+	@media screen and (max-width: 640px) {
+		clear: both;
+		float: none;
+		width: 80vw;
+	}
 }
 
 .about-me {
 	background-color: $black;
 	padding: 3vh 1vw 5vh 0;
 	border-bottom: 1px solid $footerborders;
+	@media screen and (max-width: 480px) {
+		border-bottom: none;
+	}
 }
 
 .read-now {
@@ -815,6 +879,9 @@ Footer styling
 	border: {
 		left: 1px solid $footerborders;
 		right: 1px solid $footerborders;}
+	@media screen and (max-width: 480px) {
+		border: none;
+	}
 }
 
 .blah-blah   {
@@ -823,7 +890,9 @@ Footer styling
 		right: 1px solid $footerborders;}	
 	padding: 0px 0 3vw 0;
 	clear: both;
-
+	@media screen and (max-width: 480px) {
+		border: none;
+	}
 }
 
 %footer-h2 {
@@ -864,6 +933,9 @@ Footer styling
 	// margin: 25px 0 10px 10px;
 	margin-top: 3vh;
 	margin-left: 1vw;
+	@media screen and (max-width: 640px) {
+		text-align: center;
+	}
 }
 
 .left {

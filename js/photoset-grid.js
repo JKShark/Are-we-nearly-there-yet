@@ -459,3 +459,32 @@
 
 
 })( jQuery, window, document );
+
+
+$('.photoset-grid-custom').photosetGrid({
+  // Set the gutter between columns and rows
+  gutter: '5px',
+  // Asign a common rel attribute
+  rel: 'photo-gallery',
+  
+  onComplete: function(){
+    $('.photoset-grid-lightbox').attr('style', '');
+    $('.photoset-grid-lightbox a').colorbox({
+      title: function(){ return jQuery(this).find('img').attr('alt');}, //changes colorbox to use alt instead of href title as caption
+      photo: true,
+      scalePhotos: true,
+      maxHeight:'90%',
+      maxWidth:'90%'
+
+    });
+  }
+});
+
+$('a.gallery').colorbox({title:function () {
+    return "To view full size, " + "click here!".link(this.href);
+}});
+
+
+
+
+

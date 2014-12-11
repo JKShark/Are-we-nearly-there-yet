@@ -412,6 +412,12 @@ About this site styling
   margin-right: 2vw;
 }
 
+@media screen and (max-width: 480px) {
+  .about-this-site h2 {
+    display: none;
+  }
+}
+
 .accordian {
   width: 35vw;
   height: 2rem;
@@ -481,6 +487,10 @@ About this site styling
   margin-left: 2vw;
 }
 
+#date_message {
+  font-weight: bold;
+}
+
 .about-the-blog {
   margin-left: 2vw;
   margin-bottom: 10vh;
@@ -530,8 +540,20 @@ Blog landing page layout and styles
   float: left;
   width: 30%;
   padding: 10px;
-  margin: 10px 10px 10px 20px;
-  margin-top: 85px;
+  margin: 12vh 1vw 1vh 2vw;
+}
+@media screen and (max-width: 480px) {
+  .container {
+    clear: both;
+    width: auto;
+    margin-top: 1vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container:first-child {
+    margin-top: 10vh;
+  }
 }
 
 .layout {
@@ -569,6 +591,12 @@ Blog landing page layout and styles
   padding: 0 0 10px 0;
   border-bottom: solid 2px #e3e1e1;
 }
+@media screen and (max-width: 480px) {
+  .blogColumnHeader {
+    text-align: center;
+    font-size: 1.25rem;
+  }
+}
 
 /*****************************************
 
@@ -591,12 +619,36 @@ Individual blog page post styling
   line-height: 40px;
   padding: 15vh 0 3vh;
 }
+@media screen and (max-width: 640px) {
+  .post h1 {
+    font-size: 2.75rem;
+    margin: 5vh 17vw 0 17vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .post h1 {
+    font-size: 2.5rem;
+    margin: 5vh 10vw 0 10vw;
+  }
+}
 
 .post p {
   color: #444444;
-  font-size: 0.65em;
+  font-size: 0.7em;
   margin-left: 25vw;
   margin-right: 25vw;
+}
+@media screen and (max-width: 640px) {
+  .post p {
+    margin-left: 17vw;
+    margin-right: 17vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .post p {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
 }
 
 .post p:last-child {
@@ -632,8 +684,8 @@ Individual blog page post styling
   font-size: 3rem;
   font-weight: 400;
   color: #9A83EB;
-  margin: 10vh 25vw .5em 25vw;
-  line-height: 40px;
+  margin: 10vh 17vw .5em 17vw;
+  line-height: 5vh;
   padding: 15vh 0 3vh;
 }
 
@@ -643,7 +695,7 @@ Individual blog page post styling
 
 .alex p, .madeleine p {
   color: white;
-  font-size: 0.65em;
+  font-size: 0.7em;
   margin-left: 25vw;
   margin-right: 25vw;
   font-size: 0.85em;
@@ -654,7 +706,7 @@ Individual blog page post styling
 
 .madeleine p {
   color: white;
-  font-size: 0.65em;
+  font-size: 0.7em;
   margin-left: 25vw;
   margin-right: 25vw;
   font-size: 0.75em;
@@ -702,14 +754,14 @@ Individual blog page post styling
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 1px;
-  padding: 15px 0 13px 0;
+  padding: 2vh 0;
 }
 #meta ul .author {
-  width: 45vw;
+  width: 40vw;
   font-size: 0.9em;
   line-height: 1em;
   padding-left: 2vw;
-  padding-top: 4px;
+  padding-top: 0.5vh;
   font-weight: 300;
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial, sans-serif;
   color: #b2b2b2;
@@ -759,6 +811,16 @@ Footer styling
   width: 30vw;
   float: left;
 }
+@media screen and (max-width: 640px) {
+  #footer-left-section {
+    width: 40vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  #footer-left-section {
+    width: 80vw;
+  }
+}
 
 #footer-middle-section, #footer-right-section {
   width: 25vw;
@@ -766,11 +828,36 @@ Footer styling
   float: left;
   padding: 0;
 }
+@media screen and (max-width: 640px) {
+  #footer-middle-section, #footer-right-section {
+    width: 40vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  #footer-middle-section, #footer-right-section {
+    clear: both;
+    float: none;
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #footer-right-section {
+    clear: both;
+    float: none;
+    width: 80vw;
+  }
+}
 
 .about-me, .read-now {
   background-color: black;
   padding: 3vh 1vw 5vh 0;
   border-bottom: 1px solid #292929;
+}
+@media screen and (max-width: 480px) {
+  .about-me, .read-now {
+    border-bottom: none;
+  }
 }
 
 .read-now {
@@ -778,12 +865,22 @@ Footer styling
   border-left: 1px solid #292929;
   border-right: 1px solid #292929;
 }
+@media screen and (max-width: 480px) {
+  .read-now {
+    border: none;
+  }
+}
 
 .blah-blah {
   border-left: 1px solid #292929;
   border-right: 1px solid #292929;
   padding: 0px 0 3vw 0;
   clear: both;
+}
+@media screen and (max-width: 480px) {
+  .blah-blah {
+    border: none;
+  }
 }
 
 .about-me h2, .read-now h2, .follow-me h2, .blah-blah h2, .twitter-feed h2 {
@@ -816,6 +913,11 @@ Footer styling
 .twitter-feed h2 {
   margin-top: 3vh;
   margin-left: 1vw;
+}
+@media screen and (max-width: 640px) {
+  .twitter-feed h2 {
+    text-align: center;
+  }
 }
 
 .left {
