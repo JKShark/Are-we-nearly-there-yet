@@ -553,7 +553,7 @@ Blog landing page layout and styles
 	margin: 12vh 1vw 1vh 2vw;
 	@media screen and (max-width: 480px) {
 		clear: both;
-		width: auto;
+		width: 95%;
 		margin-top: 1vh;
 	}
 }
@@ -1114,9 +1114,12 @@ Footer styling
 }
 
 .twitter-timeline {
-	height: 57vh; /*375px*/
+	height: 58vh; /*375px*/
 	overflow: hidden;
 	margin: 1vh 0 1.2vh 1vw;
+	@media screen and (max-width: 640px) {
+		margin: 1vh 0;
+	}
 	
 }
 
