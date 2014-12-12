@@ -664,6 +664,26 @@ Individual blog page post styling
 			padding-bottom: 15vh;
 }
 
+.jk-post-comments {
+	width: 50vw !important;
+	margin: {
+		left: 25vw !important;
+		right: 25vw !important;
+	}
+	@media screen and (max-width: 640px) {
+		width: 64vw !important;
+		margin: {
+			left: 17vw !important;
+			right: 17vw !important;}
+	}
+	@media screen and (max-width: 480px) {
+		width: 80vw !important;
+		margin: {
+			left: 10vw !important;
+			right: 10vw !important;}
+	}
+}
+
 .post-shading {
 		margin: 0;
 		background-color: rgba(0,0,0,0.5);
