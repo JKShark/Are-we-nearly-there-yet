@@ -677,7 +677,7 @@ Individual blog page post styling
 
 .post-shading {
   margin: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.55);
 }
 
 .alex, .madeleine {
@@ -711,6 +711,19 @@ Individual blog page post styling
 
 .madeleine {
   background-image: url(../blogposts/madeleine/San_Fran-1026.jpg);
+}
+
+.m-link {
+  color: #9A83EB;
+  text-decoration: underline;
+  font-weight: 450;
+}
+.m-link:hover {
+  color: #942f2f;
+}
+
+.madeleine img {
+  margin: 0 17vw;
 }
 
 .alex p, .madeleine p {
