@@ -671,7 +671,47 @@ Individual blog page post styling
 		right: 25vw !important;
 	}
 	@media screen and (max-width: 640px) {
-		width: 64vw !important;
+		width: 66vw !important;
+		margin: {
+			left: 17vw !important;
+			right: 17vw !important;}
+	}
+	@media screen and (max-width: 480px) {
+		width: 80vw !important;
+		margin: {
+			left: 10vw !important;
+			right: 10vw !important;}
+	}
+}
+
+.ak-post-comments {
+	width: 46vw !important;
+	margin: {
+		left: 27vw !important;
+		right: 27vw !important;
+	}
+	@media screen and (max-width: 640px) {
+		width: 66vw !important;
+		margin: {
+			left: 17vw !important;
+			right: 17vw !important;}
+	}
+	@media screen and (max-width: 480px) {
+		width: 80vw !important;
+		margin: {
+			left: 10vw !important;
+			right: 10vw !important;}
+	}
+}
+
+.m-post-comments {
+	width: 66vw !important;
+	margin: {
+		left: 17vw !important;
+		right: 17vw !important;
+	}
+	@media screen and (max-width: 640px) {
+		width: 66vw !important;
 		margin: {
 			left: 17vw !important;
 			right: 17vw !important;}
@@ -689,7 +729,7 @@ Individual blog page post styling
 		background-color: rgba(0,0,0,0.55);
 }
 
-.alex {
+.sanFranBackground {
 	background: {
 		image: url(../blogposts/alex/San_Fran-1010.jpg);
 		size: cover;
@@ -697,6 +737,21 @@ Individual blog page post styling
 		position: center;}
 	width: 100vw;
 	height: 100%;
+}
+
+.alexDubaiBackground {
+	@extend .sanFranBackground;
+	background-image: url(../blogposts/alex/Burj_Khalifa_Night.jpg);
+}
+
+.mSanFranBackground {
+	@extend .sanFranBackground;
+	background-image: url(../blogposts/madeleine/San_Fran-1026.jpg);
+}
+
+.mDubaiBackground {
+	@extend .sanFranBackground;
+	background-image: url(../blogposts/madeleine/Atlantis_Dubai.jpg);
 }
 
 .alex h1 {
@@ -720,10 +775,7 @@ Individual blog page post styling
 	line-height: 5vh;
 	padding: 15vh 0 3vh;
 }
-.madeleine {
-	@extend .alex;
-	background-image: url(../blogposts/madeleine/San_Fran-1026.jpg);
-}
+
 
 .m-link {
 	color: #9A83EB;
@@ -731,6 +783,11 @@ Individual blog page post styling
 	font-weight: 450;
 	&:hover {
 	color: $dirtyred;}
+}
+
+.a-link {
+	@extend .m-link;
+	color: #5EB2E6;
 }
 
 .madeleine img {

@@ -662,7 +662,7 @@ Individual blog page post styling
 }
 @media screen and (max-width: 640px) {
   .jk-post-comments {
-    width: 64vw !important;
+    width: 66vw !important;
     margin-left: 17vw !important;
     margin-right: 17vw !important;
   }
@@ -675,12 +675,52 @@ Individual blog page post styling
   }
 }
 
+.ak-post-comments {
+  width: 46vw !important;
+  margin-left: 27vw !important;
+  margin-right: 27vw !important;
+}
+@media screen and (max-width: 640px) {
+  .ak-post-comments {
+    width: 66vw !important;
+    margin-left: 17vw !important;
+    margin-right: 17vw !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .ak-post-comments {
+    width: 80vw !important;
+    margin-left: 10vw !important;
+    margin-right: 10vw !important;
+  }
+}
+
+.m-post-comments {
+  width: 66vw !important;
+  margin-left: 17vw !important;
+  margin-right: 17vw !important;
+}
+@media screen and (max-width: 640px) {
+  .m-post-comments {
+    width: 66vw !important;
+    margin-left: 17vw !important;
+    margin-right: 17vw !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .m-post-comments {
+    width: 80vw !important;
+    margin-left: 10vw !important;
+    margin-right: 10vw !important;
+  }
+}
+
 .post-shading {
   margin: 0;
   background-color: rgba(0, 0, 0, 0.55);
 }
 
-.alex, .madeleine {
+.sanFranBackground, .alexDubaiBackground, .mSanFranBackground, .mDubaiBackground {
   background-image: url(../blogposts/alex/San_Fran-1010.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -689,7 +729,19 @@ Individual blog page post styling
   height: 100%;
 }
 
-.alex h1, .madeleine h1 {
+.alexDubaiBackground {
+  background-image: url(../blogposts/alex/Burj_Khalifa_Night.jpg);
+}
+
+.mSanFranBackground {
+  background-image: url(../blogposts/madeleine/San_Fran-1026.jpg);
+}
+
+.mDubaiBackground {
+  background-image: url(../blogposts/madeleine/Atlantis_Dubai.jpg);
+}
+
+.alex h1 {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 3rem;
   font-weight: 300;
@@ -709,24 +761,24 @@ Individual blog page post styling
   padding: 15vh 0 3vh;
 }
 
-.madeleine {
-  background-image: url(../blogposts/madeleine/San_Fran-1026.jpg);
-}
-
-.m-link {
+.m-link, .a-link {
   color: #9A83EB;
   text-decoration: underline;
   font-weight: 450;
 }
-.m-link:hover {
+.m-link:hover, .a-link:hover {
   color: #942f2f;
+}
+
+.a-link {
+  color: #5EB2E6;
 }
 
 .madeleine img {
   margin: 0 17vw;
 }
 
-.alex p, .madeleine p {
+.alex p {
   color: white;
   font-size: 0.7em;
   margin-left: 25vw;
@@ -752,7 +804,7 @@ Individual blog page post styling
   margin-bottom: 0px;
 }
 
-.alex p:last-child, .madeleine p:last-child {
+.alex p:last-child {
   padding-bottom: 15vh;
   margin-bottom: 0px;
 }
