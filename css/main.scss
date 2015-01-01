@@ -660,6 +660,10 @@ Individual blog page post styling
 	}
 }
 
+.post li {
+		@include text($darkgrey);
+}
+
 .post p:last-child {
 			padding-bottom: 15vh;
 }

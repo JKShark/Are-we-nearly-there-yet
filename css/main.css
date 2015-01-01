@@ -651,6 +651,13 @@ Individual blog page post styling
   }
 }
 
+.post li {
+  color: #444444;
+  font-size: 0.7em;
+  margin-left: 25vw;
+  margin-right: 25vw;
+}
+
 .post p:last-child {
   padding-bottom: 15vh;
 }
