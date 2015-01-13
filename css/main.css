@@ -743,7 +743,7 @@ Individual blog page post styling
   background-color: rgba(0, 0, 0, 0.55);
 }
 
-.sanFranBackground, .alexDubaiBackground, .mSanFranBackground, .mDubaiBackground, .mNyeBackground {
+.sanFranBackground, .alexDubaiBackground, .alexVietnamBackground, .mSanFranBackground, .mDubaiBackground, .mNyeBackground, .mVietnamBackground {
   background-image: url(../blogposts/alex/San_Fran-1010.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -756,6 +756,10 @@ Individual blog page post styling
   background-image: url(../blogposts/alex/Burj_Khalifa_Night.jpg);
 }
 
+.alexVietnamBackground {
+  background-image: url(../blogposts/alex/Hanoi.jpg);
+}
+
 .mSanFranBackground {
   background-image: url(../blogposts/madeleine/San_Fran-1026.jpg);
 }
@@ -766,6 +770,10 @@ Individual blog page post styling
 
 .mNyeBackground {
   background-image: url(../blogposts/madeleine/Nye.jpg);
+}
+
+.mVietnamBackground {
+  background-image: url(../blogposts/madeleine/Hanoi.jpg);
 }
 
 .alex h1 {

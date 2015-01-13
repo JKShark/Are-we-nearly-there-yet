@@ -764,6 +764,11 @@ Individual blog page post styling
 	background-image: url(../blogposts/alex/Burj_Khalifa_Night.jpg);
 }
 
+.alexVietnamBackground {
+	@extend .sanFranBackground;
+	background-image: url(../blogposts/alex/Hanoi.jpg);
+}
+
 .mSanFranBackground {
 	@extend .sanFranBackground;
 	background-image: url(../blogposts/madeleine/San_Fran-1026.jpg);
@@ -778,6 +783,12 @@ Individual blog page post styling
 	@extend .sanFranBackground;
 	background-image: url(../blogposts/madeleine/Nye.jpg);
 }
+
+.mVietnamBackground {
+	@extend .sanFranBackground;
+	background-image: url(../blogposts/madeleine/Hanoi.jpg);
+}
+
 .alex h1 {
 	font: {
 		family: $headingtext;
