@@ -796,6 +796,10 @@ Individual blog page post styling
   padding: 15vh 0 3vh;
 }
 
+.madeleine li {
+  color: white;
+}
+
 .m-link, .a-link {
   color: #9a83eb;
   text-decoration: underline;
