@@ -682,12 +682,14 @@ Individual blog page post styling
   width: 50vw !important;
   margin-left: 25vw !important;
   margin-right: 25vw !important;
+  margin-bottom: 30vh !important;
 }
 @media screen and (max-width: 640px) {
   .jk-post-comments {
     width: 66vw !important;
     margin-left: 17vw !important;
     margin-right: 17vw !important;
+    margin-bottom: 30vh !important;
   }
 }
 @media screen and (max-width: 480px) {
@@ -695,6 +697,7 @@ Individual blog page post styling
     width: 80vw !important;
     margin-left: 10vw !important;
     margin-right: 10vw !important;
+    margin-bottom: 30vh !important;
   }
 }
 
@@ -743,7 +746,7 @@ Individual blog page post styling
   background-color: rgba(0, 0, 0, 0.55);
 }
 
-.sanFranBackground, .alexDubaiBackground, .alexVietnamBackground, .mSanFranBackground, .mDubaiBackground, .mNyeBackground, .mVietnamBackground {
+.sanFranBackground, .alexDubaiBackground, .alexVietnamBackground, .alexJapanBackground, .mSanFranBackground, .mDubaiBackground, .mNyeBackground, .mVietnamBackground, .mJapanBackground {
   background-image: url(../blogposts/alex/San_Fran-1010.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -760,6 +763,10 @@ Individual blog page post styling
   background-image: url(../blogposts/alex/Hanoi.jpg);
 }
 
+.alexJapanBackground {
+  background-image: url(../blogposts/alex/japan.jpg);
+}
+
 .mSanFranBackground {
   background-image: url(../blogposts/madeleine/San_Fran-1026.jpg);
 }
@@ -774,6 +781,10 @@ Individual blog page post styling
 
 .mVietnamBackground {
   background-image: url(../blogposts/madeleine/Hanoi.jpg);
+}
+
+.mJapanBackground {
+  background-image: url(../blogposts/madeleine/tokyo.jpg);
 }
 
 .alex h1 {

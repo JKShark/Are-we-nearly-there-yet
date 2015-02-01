@@ -689,18 +689,21 @@ Individual blog page post styling
 	margin: {
 		left: 25vw !important;
 		right: 25vw !important;
+		bottom: 30vh !important;
 	}
 	@media screen and (max-width: 640px) {
 		width: 66vw !important;
 		margin: {
 			left: 17vw !important;
-			right: 17vw !important;}
+			right: 17vw !important;
+			bottom: 30vh !important;}
 	}
 	@media screen and (max-width: 480px) {
 		width: 80vw !important;
 		margin: {
 			left: 10vw !important;
-			right: 10vw !important;}
+			right: 10vw !important;
+			bottom: 30vh !important;}
 	}
 }
 
@@ -769,6 +772,11 @@ Individual blog page post styling
 	background-image: url(../blogposts/alex/Hanoi.jpg);
 }
 
+.alexJapanBackground {
+	@extend .sanFranBackground;
+	background-image: url(../blogposts/alex/japan.jpg);
+}
+
 .mSanFranBackground {
 	@extend .sanFranBackground;
 	background-image: url(../blogposts/madeleine/San_Fran-1026.jpg);
@@ -787,6 +795,11 @@ Individual blog page post styling
 .mVietnamBackground {
 	@extend .sanFranBackground;
 	background-image: url(../blogposts/madeleine/Hanoi.jpg);
+}
+
+.mJapanBackground {
+	@extend .sanFranBackground;
+	background-image: url(../blogposts/madeleine/tokyo.jpg);
 }
 
 .alex h1 {
