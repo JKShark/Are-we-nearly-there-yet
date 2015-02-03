@@ -2,47 +2,93 @@
 <html lang="en-us">
 	<head>
 		<meta charset="utf-8">
-		<title>Alex's Blog</title>
+		<title>Not the AA</title>
 		<link rel="stylesheet" href="../../css/normalize.css">
 		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="../../css/colorbox.css">
 		<link rel="stylesheet" href="../../css/main.css">
 		<meta name="viewport" content="width=device‐width, initial‐scale=1">
 	</head>
-<body>
+<body class="articles">
 	
 <main	>
 	<header id="page-header">		
 		<h1><a href="../../index.html">Home</a></h1>
-			<nav>	
+			<nav id="full-screen">	
 				<ul>
-					<li><a href="../../photos_Vietnam.html">Photos</a></li>
+					<li id="main">
+						<div class="dropdown_heading">Photos</div>
+							<ul id="subnav">
+								<li><a href="../../photos_SanFrancisco.html">San Francisco</a></li>
+								<li><a href="../../photos_Dubai.html">Dubai</a></li>
+								<li><a href="../../photos_Vietnam.html">Vietnam</a></li>
+								<!-- <li><a href="#">Japan</a></li> -->
+								<!-- <li><a href="#">China</a></li> -->
+								<!-- <li><a href="#">Hong Kong</a></li> -->
+								<!-- <li><a href="#">Koh Samui</a></li> -->
+								<!-- <li><a href="#">Bali</a></li> -->
+								<!-- <li><a href="#">Singapore</a></li> -->
+								<!-- <li><a href="#">Australia</a></li> -->
+								<!-- <li><a href="#">New Zealand</a></li> -->
+								<!-- <li><a href="#">Los Angeles</a></li> -->
+								<!-- <li><a href="#">New York</a></li> -->
+							</ul>
+					</li>				
 					<li><a href="../../blog-home.html">Blog</a></li>			
 					<li><a href="../../maps/map.html">Our Journey</a></li>			
 					<li><a href="../../about.html">About</a></li>		
 				</ul>
 			</nav>
+			<nav id="small-screen">
+				<div id="menuButton">Menu</div>
+
+				<div class="hiddenMenu">
+					<div class="closeButton">Close</div>
+						<ul>
+							<li><a href="../../index.html">Home</a></li>		
+							<li><a href="../../maps/map.html">Our Journey</a></li>			
+							<li><a href="../../blog-home.html">Blog</a></li>			
+							<li><a href="../../photos_Vietnam.html">Photos</a></li>
+						</ul>
+				</div>
+
+			</nav>
 	</header>
+<!-- This is all the JK article excerts which occupy the left hand column and scrolls down forever -->	
 	
 	<div class="layout cf">		
-		<article class="post alex alexJapanBackground">
-			<div class="post-shading">
-				<h1>Kidzania</h1>
+		<article class="post">
+			<div>
+				<h1>Not the AA</h1>
 
-				<p>We went to Kidzania in Tokyo. This is a place just for kids where you can choose a few jobs for the day. When you get a job, you get paid with Kidzos. With these Kidzos, there is a shop you can go to and spend the Kidzos or you can pay to make things (like  ice cream which cost 10 Kidzos).</p>
+				<p>'The beer in my fridge is interfering with my sobriety.’ And so started my evening. At 4.30pm. It was at least getting dark.</p>
 
-				<p>My first job was being a pilot. We had to wear a pilot uniform and a woman taught us how to fly the plane. You didn’t actually fly a plane. It was like a computer screen and you had to fly an airplane through white and red circles on the screen and then land the plane. I was paid 7 Kidzos. It was really fun.</p>
+				<p>A day that had begun with such good intentions had been worn away. All the hard edges were not so much rounded as circular. A day spent teaching the kids and visiting temples, gardens and museums in Kyoto had reached its inevitable conclusion.</p>
 
-				<p>Next, I did food R&D which was making new food. These are the ingredients: we did snowy rice, normal rice, bacon, chicken and sweetcorn. Snowy rice is very cold and it is like sand but white. We put all the ingredients in a box and heated it up. It tasted amazing.</p>
+				<p>Having spent our first week in Japan going out every night, this morning we vowed a period of abstinence. Though I think we'd intended to go longer than 8 hours.</p>
 
-				<p>Then I worked in a bakery with my sister. Daddy said it smelled like croissants and he was right! We got a triangular piece of dough and rolled it from the big end to a small end so that it looked like a caterpillar. We had another piece of dough which was rectangular. We got a dough cutter. Folded the corner down and cut a little slice, unfolded it and put the right hand side underneath and pulled and put the left side above and pulled it, so it looked like a twisted piece of wood. We put them in the oven and when they were finished, we put some syrup on the top and we ate them. They tasted delicious.</p>
+				<p>We'd made the mistake of still having a few Asahi Drys in the fridge. By the time we got back to our little house in Kyoto, exhausted, the fridge was drawing us near. The cans inside were screaming our names.</p>
 
-				<p>After the bakery, it was nearly time to go. I did making ice cream with Freddie. We had to pay. We had to wear an apron and a hair net and a stripy hat. We lined up with a cone in front of us and the lady told us how to do it. We twirled the cone underneath a machine that made the ice cream, like a pyramid. Then we added sprinkles and a biscuit. I had to help Freddie because he was too young. He really liked it.</p>
-
-				<p>I liked having jobs as I have never had a job before and would really like them to open Kidzania in England so I can earn more Kidzos to spend!</p>
+				<p>Asahi Dry today. Properly dry tomorrow, here's hoping. At least the fridge is now cleansed of temptation.</p>
 
 			</div>
 		</article>
 
+		<div class="jk-post-comments" id="disqus_thread"></div>
+		<script type="text/javascript">
+		    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+		    var disqus_shortname = 'are-we-nearly-there'; // required: replace example with your forum shortname
+
+		    /* * * DON'T EDIT BELOW THIS LINE * * */
+		    (function() {
+		        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		        dsq.src = 'http://www.' + disqus_shortname + '.disqus.com/embed.js';
+		        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		    })();
+		</script>
+		<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+		<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+    
 	</div>
 
 	<div id="meta">
@@ -52,18 +98,18 @@
 			</li>
 			<!-- Insert categories class here if I ever get a search function to work -->
 			<li class="author">
-				<p>Author: Alex</p>
+				<p>Author: JK</p>
 			</li>
 			
 			<li class="arrow old">
 				<span>
-					<a href="ak-lessons-outside.html">←</a>
+					<a href="jk-speeding-bullet.html">←</a>
 				</span>
 			</li>
 
 			<li class="arrow new">
 				<span>
-					<a href="ak-samurai.html">→</a>
+					<a href="#">→</a>
 				</span>
 			</li>
 		</ul>
