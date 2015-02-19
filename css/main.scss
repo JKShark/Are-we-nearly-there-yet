@@ -777,6 +777,11 @@ Individual blog page post styling
 	background-image: url(../blogposts/alex/japan.jpg);
 }
 
+.alexChinaBackground {
+	@extend .sanFranBackground;
+	background-image: url(../blogposts/alex/ak-china.jpg);
+}
+
 .mSanFranBackground {
 	@extend .sanFranBackground;
 	background-image: url(../blogposts/madeleine/San_Fran-1026.jpg);
@@ -800,6 +805,11 @@ Individual blog page post styling
 .mJapanBackground {
 	@extend .sanFranBackground;
 	background-image: url(../blogposts/madeleine/tokyo.jpg);
+}
+
+.mChinaBackground {
+	@extend .sanFranBackground;
+	background-image: url(../blogposts/madeleine/m-china.jpg);
 }
 
 .alex h1 {
