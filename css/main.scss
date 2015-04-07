@@ -787,6 +787,11 @@ Individual blog page post styling
 	background-image: url(../blogposts/alex/ak-samui.jpg);
 }
 
+.alexBaliBackground {
+	@extend .sanFranBackground;
+	background-image: url(../blogposts/alex/ak-bali.jpg);
+}
+
 .mSanFranBackground {
 	@extend .sanFranBackground;
 	background-image: url(../blogposts/madeleine/San_Fran-1026.jpg);
@@ -820,6 +825,11 @@ Individual blog page post styling
 .mSamuiBackground {
 	@extend .sanFranBackground;
 	background-image: url(../blogposts/madeleine/m-samui.jpg);
+}
+
+.mBaliBackground {
+	@extend .sanFranBackground;
+	background-image: url(../blogposts/madeleine/m-bali.jpg);
 }
 
 .alex h1 {

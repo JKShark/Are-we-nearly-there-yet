@@ -746,7 +746,7 @@ Individual blog page post styling
   background-color: rgba(0, 0, 0, 0.55);
 }
 
-.sanFranBackground, .alexDubaiBackground, .alexVietnamBackground, .alexJapanBackground, .alexChinaBackground, .alexSamuiBackground, .mSanFranBackground, .mDubaiBackground, .mNyeBackground, .mVietnamBackground, .mJapanBackground, .mChinaBackground, .mSamuiBackground {
+.sanFranBackground, .alexDubaiBackground, .alexVietnamBackground, .alexJapanBackground, .alexChinaBackground, .alexSamuiBackground, .alexBaliBackground, .mSanFranBackground, .mDubaiBackground, .mNyeBackground, .mVietnamBackground, .mJapanBackground, .mChinaBackground, .mSamuiBackground, .mBaliBackground {
   background-image: url(../blogposts/alex/San_Fran-1010.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -775,6 +775,10 @@ Individual blog page post styling
   background-image: url(../blogposts/alex/ak-samui.jpg);
 }
 
+.alexBaliBackground {
+  background-image: url(../blogposts/alex/ak-bali.jpg);
+}
+
 .mSanFranBackground {
   background-image: url(../blogposts/madeleine/San_Fran-1026.jpg);
 }
@@ -801,6 +805,10 @@ Individual blog page post styling
 
 .mSamuiBackground {
   background-image: url(../blogposts/madeleine/m-samui.jpg);
+}
+
+.mBaliBackground {
+  background-image: url(../blogposts/madeleine/m-bali.jpg);
 }
 
 .alex h1 {
