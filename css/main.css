@@ -678,6 +678,14 @@ Individual blog page post styling
   padding-bottom: 15vh;
 }
 
+.acrostic p:first-letter {
+  float: left;
+  font-size: 3em;
+  line-height: 1.5;
+  color: white;
+  margin: -.73em .1em -.1em 0em;
+}
+
 .jk-post-comments {
   width: 50vw !important;
   margin-left: 25vw !important;
@@ -746,7 +754,7 @@ Individual blog page post styling
   background-color: rgba(0, 0, 0, 0.55);
 }
 
-.sanFranBackground, .alexDubaiBackground, .alexVietnamBackground, .alexJapanBackground, .alexChinaBackground, .alexSamuiBackground, .alexBaliBackground, .mSanFranBackground, .mDubaiBackground, .mNyeBackground, .mVietnamBackground, .mJapanBackground, .mChinaBackground, .mSamuiBackground, .mBaliBackground {
+.sanFranBackground, .alexDubaiBackground, .alexVietnamBackground, .alexJapanBackground, .alexChinaBackground, .alexSamuiBackground, .alexBaliBackground, .alexSingaporeBackground, .mSanFranBackground, .mDubaiBackground, .mNyeBackground, .mVietnamBackground, .mJapanBackground, .mChinaBackground, .mSamuiBackground, .mBaliBackground, .mSingaporeBackground {
   background-image: url(../blogposts/alex/San_Fran-1010.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -779,6 +787,10 @@ Individual blog page post styling
   background-image: url(../blogposts/alex/ak-bali.jpg);
 }
 
+.alexSingaporeBackground {
+  background-image: url(../blogposts/alex/ak-singapore.jpg);
+}
+
 .mSanFranBackground {
   background-image: url(../blogposts/madeleine/San_Fran-1026.jpg);
 }
@@ -809,6 +821,10 @@ Individual blog page post styling
 
 .mBaliBackground {
   background-image: url(../blogposts/madeleine/m-bali.jpg);
+}
+
+.mSingaporeBackground {
+  background-image: url(../blogposts/madeleine/m-singapore.jpg);
 }
 
 .alex h1 {
