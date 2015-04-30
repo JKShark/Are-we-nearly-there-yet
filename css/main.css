@@ -754,7 +754,7 @@ Individual blog page post styling
   background-color: rgba(0, 0, 0, 0.55);
 }
 
-.sanFranBackground, .alexDubaiBackground, .alexVietnamBackground, .alexJapanBackground, .alexChinaBackground, .alexSamuiBackground, .alexBaliBackground, .alexSingaporeBackground, .mSanFranBackground, .mDubaiBackground, .mNyeBackground, .mVietnamBackground, .mJapanBackground, .mChinaBackground, .mSamuiBackground, .mBaliBackground, .mSingaporeBackground {
+.sanFranBackground, .alexDubaiBackground, .alexVietnamBackground, .alexJapanBackground, .alexChinaBackground, .alexSamuiBackground, .alexBaliBackground, .alexSingaporeBackground, .alexAustraliaBackground, .mSanFranBackground, .mDubaiBackground, .mNyeBackground, .mVietnamBackground, .mJapanBackground, .mChinaBackground, .mSamuiBackground, .mBaliBackground, .mSingaporeBackground, .mAustraliaBackground {
   background-image: url(../blogposts/alex/San_Fran-1010.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -791,6 +791,10 @@ Individual blog page post styling
   background-image: url(../blogposts/alex/ak-singapore.jpg);
 }
 
+.alexAustraliaBackground {
+  background-image: url(../blogposts/alex/ak-australia.jpg);
+}
+
 .mSanFranBackground {
   background-image: url(../blogposts/madeleine/San_Fran-1026.jpg);
 }
@@ -825,6 +829,10 @@ Individual blog page post styling
 
 .mSingaporeBackground {
   background-image: url(../blogposts/madeleine/m-singapore.jpg);
+}
+
+.mAustraliaBackground {
+  background-image: url(../blogposts/madeleine/m-australia.jpg);
 }
 
 .alex h1 {
